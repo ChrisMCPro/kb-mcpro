@@ -1,0 +1,64 @@
+---
+title: "Pathologies"
+description: "Créer, documenter, partager au bon niveau, clôturer."
+---
+
+
+# Pathologies
+
+Une **pathologie** est la fiche centrale du module médical.  
+Elle représente un incident de santé impactant un joueur :
+- **Blessure** : dommage physique
+- **Maladie** : affection organique ou virale
+
+## Création d’une pathologie
+
+
+###  Sélectionner le joueur
+Vous rattachez la pathologie à un joueur.
+
+###  Choisir le type : blessure ou maladie
+Le type détermine la structure de la classification.
+
+###  Renseigner le diagnostic via une classification standardisée
+La pathologie est structurée selon une classification médicale (OSIICS) :
+- Blessure : Région → Type → Diagnostic
+- Maladie : Système → Étiologie → Diagnostic
+
+###  Référence (classification)
+- Historique des versions de la classification OSIICS https://www.johnorchard.com/osiics-version-history.html
+
+###  Renseigner les dates clés
+- Date de déclaration (survenue)
+- Date de retour estimée (prévisionnel sportif)
+- Date de retour effective (retour réel)
+
+###  Compléter les informations utiles au suivi
+Selon le type, vous pouvez documenter le contexte et les éléments nécessaires à la prise en charge (ex. récidive, mécanisme, etc.).
+
+
+## Règles de disponibilité
+
+
+Création : la création d’une pathologie bascule automatiquement le statut du joueur en “Blessé” (indisponible).
+
+
+La pathologie est considérée comme **clôturée** lorsque la **date de retour effective** est renseignée.
+
+
+Le module gère l’indisponibilité sportive, pas un arrêt de travail administratif.
+
+
+## Notes et communication (4 zones)
+
+Pour sécuriser la confidentialité, les notes sont séparées en 4 zones :
+- **Note médicale** : médecins uniquement  
+- **Note paramédicale** : médecins + paramédicaux  
+- **Note globale** : visible par les profils autorisés (y compris accès restreint)  
+- **Note joueur** : visible par le joueur si le partage est activé
+
+## Partage au joueur (optionnel)
+
+Le partage vers l’application joueur est **activable** et **granulaire** :
+- rendre la pathologie visible (oui/non)
+- rendre la note joueur visible (oui/non)

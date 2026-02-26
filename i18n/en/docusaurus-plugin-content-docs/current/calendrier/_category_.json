@@ -1,0 +1,8 @@
+{
+  "label": "Calendrier",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "La gestion de votre calendrier"
+  }
+}

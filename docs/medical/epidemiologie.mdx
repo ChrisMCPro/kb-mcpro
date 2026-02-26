@@ -1,0 +1,56 @@
+---
+title: "Épidémiologie & indicateurs"
+description: "Mesurer l’exposition, l’incidence et le fardeau, au niveau équipe et joueur."
+---
+
+
+# Épidémiologie & indicateurs
+
+Cette partie transforme les données saisies en indicateurs pour piloter la prévention et le suivi de l’effectif.
+
+
+Tous les indicateurs sont normalisés sur 1000 heures de pratique, afin de comparer dans le temps et entre groupes.
+
+
+## Prérequis : échelle de gravité
+
+Le module s’appuie sur une **échelle de gravité** (configurable) basée sur le nombre de jours d’indisponibilité.  
+Exemple courant :
+- 1 à 7 jours : légère  
+- 7 à 25 jours : modérée  
+- ≥ 25 jours : grave  
+
+## Définitions des indicateurs
+
+###  Exposition (en heures)
+Somme des durées d’entraînement et de match.
+Quand plusieurs sources existent, une priorité est appliquée :
+1) durée GPS  
+2) durée individuelle saisie (ex. charge / RPE)  
+3) durée planifiée de la séance
+
+###  Incidence (fréquence)
+Mesure la fréquence d’apparition des blessures.
+
+Formule :
+`(Nombre de blessures / Exposition totale) × 1000`
+
+###  Fardeau (impact)
+Mesure l’impact des blessures sur l’effectif en intégrant les jours d’indisponibilité.
+
+Formule :
+`(Jours d’indisponibilité / Exposition totale) × 1000`
+
+## Lecture au niveau équipe
+
+Les indicateurs permettent notamment de suivre :
+- la volumétrie (blessures, maladies, joueurs concernés)
+- l’exposition collective
+- l’incidence collective
+- le fardeau collectif
+
+## Lecture au niveau joueur
+
+Les mêmes indicateurs peuvent être consultés à l’échelle individuelle, afin de :
+- suivre la saison du joueur (historique)
+- comparer les contextes (global / entraînement / match) selon votre paramétrage

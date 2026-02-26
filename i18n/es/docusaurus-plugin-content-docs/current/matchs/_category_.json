@@ -1,0 +1,8 @@
+{
+  "label": "Matchs",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Créer et enrichir vos matchs avec des données objectives, subjectives etc."
+  }
+}

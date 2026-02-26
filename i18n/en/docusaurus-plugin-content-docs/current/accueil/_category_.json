@@ -1,0 +1,8 @@
+{
+  "label": "Accueil",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Apprenez à configurer votre page d'accueil."
+  }
+}

@@ -1,0 +1,129 @@
+---
+title: "Notes technique Medical"
+description: "Notes technique sur le module médical"
+---
+
+## Tutoriels
+
+
+---
+title: Module médical (refonte) - Pathologies, consultations et notes
+---
+
+# Module médical (refonte)
+
+Cette page explique la nouvelle organisation du module médical : **Pathologies**, **Consultations (avec contexte)**, **Notes**, **Documents** et **droits d’accès**.
+
+## Ce qui change
+
+- On ne parle plus de **blessures / maladies** comme objets principaux : tout est regroupé sous **pathologies**.
+- La description des pathologies s’appuie sur **ORCHARD 15 (OSIICS v15)**.
+- Les **consultations** existent toujours, mais elles sont **associées à un contexte**, et ces contextes sont **personnalisables** (comme les types de séances).
+- Un nouveau niveau d’accès est ajouté : **medical_restricted** (encadrement “terrain”).
+
+---
+
+## Concepts clés
+
+### Pathologie
+Une **pathologie** est l’objet central de suivi médical.
+
+- Une pathologie peut être liée à **plusieurs consultations**.
+- Une pathologie est décrite avec un **code ORCHARD 15**.
+
+> **Saisie rapide**  
+> Vous pouvez **renseigner directement le code ORCHARD** pour aller plus vite.
+
+### Consultation (avec contexte)
+Une **consultation** est un événement médical rattaché à une pathologie (ex : bilan, suivi, imagerie, etc.).
+
+- Chaque consultation a un **contexte**.
+- Les **contextes** sont **personnalisables** (même logique que les types de séances).
+
+### Note
+Une **note** est un texte rattaché à un élément médical.
+
+- Une note est liée **soit** à une **pathologie**, **soit** à une **consultation**.
+
+---
+
+## ORCHARD 15 (OSIICS v15)
+
+Dans MyCoach Pro, la description d’une pathologie utilise **ORCHARD 15 / OSIICS v15**.
+
+- Lien de référence (redirect recommandé dans la doc) :  
+  https://www.johnorchard.com/osiics-downloads.html
+- Publication OSIICS v15 (référence) :  
+  https://pubmed.ncbi.nlm.nih.gov/38494156/
+
+---
+
+## Droits d’accès (ACL)
+
+### Niveaux disponibles
+- **medical** : accès complet.
+- **paramedical** : accès limité (selon la configuration de votre organisation).
+- **medical_restricted** : accès “terrain” (coach / préparateur, etc.).
+
+### Hiérarchie (important)
+**medical > paramedical > medical_restricted**
+
+- Un utilisateur **medical** voit tout ce que voient **paramedical** et **medical_restricted**.
+- Un utilisateur **paramedical** voit tout ce que voit **medical_restricted**.
+
+### Particularité de medical_restricted
+Les utilisateurs **medical_restricted** ne voient **que** les éléments médicaux :
+- **partagés directement** avec eux, ou
+- accessibles via un **niveau de partage** prévu par votre organisation.
+
+> En clair : **pas d’accès par défaut** à tout le médical. Uniquement ce qui est **partagé**.
+
+---
+
+## Notes : création, visibilité et propriété
+
+### Qui peut créer une note ?
+
+**Note liée à une consultation**
+- Seul **le médecin (praticien) qui a créé la consultation** peut créer la note.
+
+**Note liée à une pathologie**
+- Toute personne ayant **accès à la pathologie** (y compris via un **partage**) peut créer la note.
+
+### Tous les médecins ou seulement ceux de l’équipe ?
+Le périmètre des médecins concernés est **déduit de l’élément lié** (pathologie ou consultation).  
+➡️ Ce n’est pas “tous les médecins”, mais ceux concernés par **le contexte / le périmètre** de cet élément.
+
+### Que se passe-t-il si la visibilité change ?
+- Le **praticien reste propriétaire** de la note.
+- Tous les autres accès obtenus par **partage** sont **retirés** (les partages sont réinitialisés).
+- Point à confirmer : selon la configuration, la note peut rester **visible ou non** au praticien après changement de visibilité.
+
+### Que se passe-t-il si le praticien change ?
+- Changer de praticien entraîne un **changement de propriétaire**.
+- L’application affiche un **avertissement très visible** : **bannière d’alerte rouge** avant/pendant l’action.
+
+---
+
+## Synchronisation ASKAMON (L1/L2 France)
+
+- Si une pathologie n’est **pas complétée**, elle **n’est pas synchronisée** vers ASKAMON.
+
+---
+
+## Parcours recommandé
+
+1. **Créer une pathologie**
+   - Sélectionner (ou saisir) un **code ORCHARD 15**
+   - Enregistrer
+
+2. **Ajouter une consultation**
+   - Créer une consultation rattachée à la pathologie
+   - Choisir un **contexte** (personnalisable)
+
+3. **Rédiger une note**
+   - Depuis la pathologie **ou** la consultation
+   - Respecter les règles de création
+
+4. **Partager si besoin**
+   - Partager aux profils **medical_restricted** si nécessaire

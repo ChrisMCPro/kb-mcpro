@@ -1,0 +1,8 @@
+{
+  "label": "Insights",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Cette section concerne la gestion de vos formulaires et de vos dashboards Report BI."
+  }
+}

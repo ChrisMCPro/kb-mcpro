@@ -1,0 +1,8 @@
+{
+  "label": "Séances",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Gérer vos séance d'entraînement."
+  }
+}

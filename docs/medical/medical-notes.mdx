@@ -1,0 +1,63 @@
+---
+title: "Notes médicales"
+description: "Comprendre, créer et retrouver des notes médicales liées à une consultation ou une pathologie."
+tags: ["features", "medical", "notes", "ams"]
+sidebar_position: 35
+---
+
+# Notes médicales
+
+## À quoi ça sert ?
+Les **notes médicales** permettent de garder une trace claire et structurée d’informations liées à un suivi médical, **directement rattachée** à une :
+- **consultation**
+- **pathologie**
+
+
+✅ Une note médicale est toujours **liée** à une consultation ou une pathologie.  
+❌ Une note “sans lien” n’entre pas dans ce fonctionnement.
+
+
+---
+
+## Ce que vous pouvez faire
+- **Créer** une note liée à une consultation ou une pathologie
+- **Retrouver** toutes les notes d’une consultation / pathologie
+- **Gérer la visibilité** (partage) en respectant les règles de sécurité
+
+---
+
+## Qui peut créer / modifier une note ?
+
+### Si la note est liée à une consultation
+✅ **Seul le médecin assigné** à la consultation peut **créer et modifier** la note.
+
+### Si la note est liée à une pathologie
+✅ Toute personne ayant **accès à la pathologie** peut **créer et modifier** la note.
+
+:::note
+On ne choisit pas manuellement “tous les médecins” vs “médecins d’équipe”.  
+👉 C’est **déduit automatiquement** selon l’entité liée (consultation / pathologie).
+:::
+
+---
+
+## Comment retrouver les notes d’une consultation ou d’une pathologie ?
+Pour afficher les notes d’une entité, il faut faire une **recherche de notes** à partir du lien :
+
+- `related.type` = **Consultation** ou **Pathology**
+- `related.id` = l’identifiant de l’entité
+
+**Exemples :**
+- Notes de consultation → `Consultation + consultationId`
+- Notes de pathologie → `Pathology + pathologyId`
+
+---
+
+## Comment créer une note liée ? (règles système)
+
+Lors de la création, la note doit respecter ces règles :
+
+- **`related` obligatoire** (consultation ou pathologie)
+- **`type` = `ams`**
+- **`patient` toujours** si disponible (si le patient est connu)
+- **`moduleId` obligatoire**
