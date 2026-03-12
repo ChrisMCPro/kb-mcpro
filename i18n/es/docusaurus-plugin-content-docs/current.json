@@ -1,0 +1,70 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Accueil": {
+    "message": "Inicio",
+    "description": "The label for category 'Accueil' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Média Center": {
+    "message": "Media Center",
+    "description": "The label for category 'Média Center' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Medical": {
+    "message": "Medico",
+    "description": "The label for category 'Medical' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Nutrition": {
+    "message": "Nutricion",
+    "description": "The label for category 'Nutrition' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Performance": {
+    "message": "Rendimiento",
+    "description": "The label for category 'Performance' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Séances": {
+    "message": "Sesiones",
+    "description": "The label for category 'Séances' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Scouting": {
+    "message": "Scouting",
+    "description": "The label for category 'Scouting' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Joueurs": {
+    "message": "Jugadores",
+    "description": "The label for category 'Joueurs' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Club": {
+    "message": "Club",
+    "description": "The label for category 'Club' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Formulaires": {
+    "message": "Formularios",
+    "description": "The label for category 'Formulaires' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Rapports": {
+    "message": "Informes",
+    "description": "The label for category 'Rapports' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Paramètres": {
+    "message": "Parámetros",
+    "description": "The label for category 'Paramètres' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.App mobile": {
+    "message": "App Móvil",
+    "description": "The label for category 'App mobile' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Calendrier": {
+    "message": "Calendario",
+    "description": "The label for category 'Calendrier' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Matchs": {
+    "message": "Partidos",
+    "description": "The label for category 'Matchs' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Exercises": {
+    "message": "Ejercicios",
+    "description": "The label for category 'Exercises' in sidebar 'tutorialSidebar'"
+  }
+}

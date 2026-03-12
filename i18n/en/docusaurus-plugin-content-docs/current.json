@@ -1,0 +1,70 @@
+{
+  "version.label": {
+    "message": "Current",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Accueil": {
+    "message": "Home",
+    "description": "The label for category 'Accueil' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Média Center": {
+    "message": "Media Center",
+    "description": "The label for category 'Média Center' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Medical": {
+    "message": "Medical",
+    "description": "The label for category 'Medical' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Nutrition": {
+    "message": "Nutrition",
+    "description": "The label for category 'Nutrition' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Performance": {
+    "message": "Performance",
+    "description": "The label for category 'Performance' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Séances": {
+    "message": "Sessions",
+    "description": "The label for category 'Séances' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Scouting": {
+    "message": "Scouting",
+    "description": "The label for category 'Scouting' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Joueurs": {
+    "message": "Players",
+    "description": "The label for category 'Joueurs' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Club": {
+    "message": "Club",
+    "description": "The label for category 'Club' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Formulaires": {
+    "message": "Forms",
+    "description": "The label for category 'Formulaires' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Rapports": {
+    "message": "Reports",
+    "description": "The label for category 'Rapports' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Paramètres": {
+    "message": "Settings",
+    "description": "The label for category 'Paramètres' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.App mobile": {
+    "message": "Mobile App",
+    "description": "The label for category 'App mobile' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Calendrier": {
+    "message": "Calendar",
+    "description": "The label for category 'Calendrier' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Matchs": {
+    "message": "Matches",
+    "description": "The label for category 'Matchs' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Exercises": {
+    "message": "Exercises",
+    "description": "The label for category 'Exercises' in sidebar 'tutorialSidebar'"
+  }
+}
