@@ -66,5 +66,25 @@
   "sidebar.tutorialSidebar.category.Exercises": {
     "message": "Exercises",
     "description": "The label for category 'Exercises' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Insights": {
+    "message": "Insights",
+    "description": "The label for category 'Insights' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Statistiques": {
+    "message": "Statistiques",
+    "description": "The label for category 'Statistiques' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Application Mobile": {
+    "message": "Application Mobile",
+    "description": "The label for category 'Application Mobile' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.mobile-joueurs": {
+    "message": "Joueurs",
+    "description": "The label for category 'Joueurs' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.mobile-staff": {
+    "message": "Staff",
+    "description": "The label for category 'Staff' in sidebar 'tutorialSidebar'"
   }
 }

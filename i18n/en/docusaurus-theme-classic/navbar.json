@@ -1,6 +1,6 @@
 {
   "title": {
-    "message": "MYCOACH PRO - Guide Utilisateurs",
+    "message": "MYCOACH PRO - Users Guide",
     "description": "The title in the navbar"
   },
   "logo.alt": {
@@ -8,7 +8,7 @@
     "description": "The alt text of navbar logo"
   },
   "item.label.Tutoriels": {
-    "message": "Tutoriels",
+    "message": "Tutorials",
     "description": "Navbar item with label Tutoriels"
   }
 }
