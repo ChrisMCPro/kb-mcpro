@@ -77,6 +77,8 @@ const sidebars = {
       label: 'Insights',
       link: { type: 'generated-index' },
       items: [
+
+
         {
           type: 'category',
           label: 'Formulaires',
@@ -181,8 +183,7 @@ const sidebars = {
   label: 'Application Mobile',
   link: { type: 'generated-index' },
   items: [
-    'app-mobile/index',
-    
+    'app-mobile/introduction-mobile',
     {
       type: 'category',
       label: 'Joueurs', 
@@ -190,6 +191,7 @@ const sidebars = {
       items: [
         'app-mobile/joueurs/create-player-session',
         'app-mobile/joueurs/fresh-start',
+        'app-mobile/joueurs/health-data',
         // ...
       ],
     },
@@ -200,7 +202,12 @@ const sidebars = {
       key: 'mobile-staff',
       items: ['app-mobile/staff/create-player-session'],
     },
+
+    'app-mobile/notification-disabled',
+    'app-mobile/resync-token',
   ],
+
+  
 },
   ],
 };
