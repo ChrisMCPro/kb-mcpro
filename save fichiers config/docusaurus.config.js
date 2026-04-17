@@ -7,6 +7,11 @@ const config = {
   tagline: 'MyCoach Pro is cool!',
   favicon: 'img/logo-mcpro-red.ico',
 
+
+    //future: {
+    //  v4: false,
+    //},
+
   url: 'https://your-docusaurus-site.example.com',
   baseUrl: '/',
 
@@ -15,6 +20,7 @@ const config = {
 
   onBrokenLinks: 'throw',
 
+  // 👇 Bloc i18n mis à jour
   i18n: {
     defaultLocale: 'fr',
     locales: ['fr', 'en', 'es'],
@@ -38,12 +44,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: (() => {
-            const locale = process.env.DOCUSAURUS_CURRENT_LOCALE ?? 'fr';
-            if (locale === 'en') return './sidebars-en.js';
-            if (locale === 'es') return './sidebars-es.js';
-            return './sidebars.js';
-          })(),
+          sidebarPath: './sidebars.js',
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -88,8 +89,9 @@ const config = {
           },
           {
             type: 'localeDropdown',
-            position: 'right',
+            position: 'right', // 👈 déplacé à droite, plus conventionnel
           },
+
         ],
       },
       footer: {

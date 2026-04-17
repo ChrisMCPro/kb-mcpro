@@ -1,33 +1,29 @@
 ---
-title: "Module médical — Guide utilisateur"
-description: "Déclarer une pathologie, planifier des consultations, analyser l’épidémiologie."
+title: "Medical module — User guide"
+description: "Report a pathology, schedule consultations, analyze epidemiology."
 ---
 
+# How it works
 
-# Fonctionnement
+### The medical module lets you:
+1. **Create and track a pathology** (injury or illness) for a player  
+2. **Schedule consultations** (care / follow-up activities) and link them to the medical context  
+3. **Analyze the season** through epidemiology (exposure, incidence, burden)
 
-### Le module médical permet de :
-1) **Créer et suivre une pathologie** (blessure ou maladie) pour un joueur  
-2) **Planifier des consultations** (actes de soin / suivi) et les relier au contexte médical  
-3) **Analyser la saison** via l’épidémiologie (exposition, incidence, fardeau)
+Confidentiality is central: each profile only accesses the information needed for their role.
 
+## Overall logic
 
-La confidentialité est centrale : chaque profil accède uniquement aux informations nécessaires à son rôle.
+###  [I create a pathology (injury or illness)](/docs/medical/pathologies)
+The pathology is the central follow-up record.
 
+###  [Sports availability is managed by the pathology](/docs/medical/pathologies)
+When created, the player is marked as unavailable.  
+The pathology is closed when the actual return date is entered.
 
-## Logique générale (vue d’ensemble)
+###  [I schedule consultations if needed](/docs/medical/consultations)
+Consultations are care / follow-up events.  
+They can be linked to a pathology to ensure traceability.
 
-
-###  [Je crée une pathologie (blessure ou maladie)](/docs/medical/pathologies)
-La pathologie est la fiche centrale du suivi.
-
-###  [L’indisponibilité sportive est gérée par la pathologie](/docs/medical/pathologies)
-À la création, le joueur est déclaré indisponible.
-La pathologie se clôture quand la date de retour effective est renseignée.
-
-###  [Je planifie des consultations si nécessaire](/docs/medical/consultations)
-Les consultations sont des événements de soin / suivi.
-Elles peuvent être liées à une pathologie pour assurer la traçabilité.
-
-###  [Je consulte l’épidémiologie](/docs/medical/epidemiologie)
-Les indicateurs permettent de mesurer la fréquence des blessures et leur impact sur l’effectif.
+###  [I view epidemiology](/docs/medical/epidemiology)
+The indicators make it possible to measure injury frequency and their impact on the squad.

@@ -1,0 +1,397 @@
+---
+title: "Médical - WEB"
+description: "Bien débuter avec le nouveau module médical."
+---
+# Médical - WEB
+
+**🏗️ En construction**
+
+## Accès et organisation du module
+
+Le module médical web s'intègre dans un environnement personnalisable.
+
+Depuis l'accueil, des raccourcis peuvent être ajoutés pour accéder plus rapidement aux actions les plus fréquentes, notamment :
+
+- Ajouter une pathologie
+- Ajouter une consultation
+
+Le menu latéral peut également être configuré afin d'adapter l'interface au rôle et aux usages de chaque utilisateur.
+
+Dans sa structure générale, le module s'organise autour des entrées suivantes :
+
+- Patients
+- Consultations
+- Notes
+- Pathologies
+- Statistiques
+- Documents
+- Médicaments
+- Paramètres
+
+Cette structure permet de naviguer soit par joueur, soit par type d'information, soit par niveau d'analyse.
+
+---
+
+## Les patients
+
+L'onglet **Patients** permet d'ouvrir le dossier médical d'un joueur et de retrouver les principales informations qui le concernent.
+
+Cette vue sert de porte d'entrée individuelle dans le module. Elle permet de recentrer la lecture sur un joueur donné et de retrouver plus facilement ses pathologies, ses consultations, ses documents et ses éléments de suivi.
+
+---
+
+## Créer une pathologie
+
+La création d'une pathologie constitue l'un des points centraux du module.
+
+Une pathologie peut être créée depuis plusieurs endroits du produit, notamment depuis l'accueil ou directement depuis le module médical.
+
+### Type de pathologie
+
+Deux grandes catégories sont proposées :
+
+- Blessure
+- Maladie
+
+### Informations générales
+
+Lors de la création d'une pathologie, l'utilisateur peut renseigner les éléments structurants du dossier, notamment :
+
+- Le patient
+- La date de début
+- Le retour estimé
+- Le retour effectif
+- Le nouveau statut de forme courant
+
+Ces informations permettent de poser la base du suivi et d'inscrire immédiatement la pathologie dans la logique de disponibilité du joueur.
+
+### Recherche OSIICS
+
+La saisie du diagnostic a été enrichie avec une recherche OSIICS plus complète. La recherche peut se faire :
+
+- Par code
+- Par diagnostic
+
+Cette évolution permet de gagner du temps à la saisie tout en améliorant la standardisation des données médicales.
+
+### Champs de description
+
+La création d'une pathologie permet de renseigner des informations détaillées, notamment :
+
+- La catégorie corporelle
+- La région
+- La nature
+- Le type
+- Le diagnostic
+- Le code OSIICS
+- La latéralité
+- La position
+- Le mécanisme d'action
+- L'apparition
+- Le contact
+- L'occurrence
+- Le type de terrain
+- La pathologie préexistante
+- L'intervention chirurgicale
+
+### Occurrence et rechute
+
+Si la pathologie correspond à une répétition ou à une rechute, elle peut être reliée à une pathologie antérieure. Cette logique permet de suivre plus finement l'historique d'un même problème médical.
+
+### Lier la pathologie à un événement
+
+Une pathologie peut être liée à un événement. Cette liaison permet de rattacher le cas médical à un contexte précis, par exemple une séance ou un autre événement de l'activité sportive. Cette information améliore ensuite la qualité de lecture du dossier et des statistiques associées.
+
+### Commentaires de pathologie
+
+La pathologie intègre plusieurs niveaux de commentaires afin de distinguer les informations selon leur niveau de diffusion.
+
+Les espaces prévus dans cette nouvelle version sont les suivants :
+
+- Commentaire médical
+- Commentaire paramédical
+- Commentaire performance médicale
+
+Cette séparation permet de conserver une circulation utile de l'information sans exposer tout le contenu à tous les profils.
+
+### La pathologie comme dossier central
+
+Une fois enregistrée, la pathologie devient le point central du suivi pour le cas concerné.
+
+Dans le détail d'une pathologie, plusieurs onglets permettent de retrouver une vue consolidée du dossier :
+
+- Général
+- Consultations
+- Notes
+- Commentaires
+- Documents
+
+Cette organisation permet de comprendre rapidement :
+
+- Ce qu'a le joueur
+- Comment la situation a évolué
+- Quelles consultations ont été réalisées
+- Quelles informations ont été ajoutées
+- Quels documents sont disponibles
+
+> La pathologie n'est donc pas seulement une fiche de déclaration. Elle devient un **dossier de suivi complet**.
+
+---
+
+## Créer une consultation
+
+La consultation constitue l'une des évolutions les plus importantes du module. Elle n'est plus pensée comme une simple note de suivi. Elle devient un véritable objet fonctionnel intégré au module et au calendrier.
+
+### Points d'entrée possibles
+
+Une consultation peut être créée :
+
+- Depuis l'accueil
+- Depuis le module médical
+- Depuis un patient
+- Depuis une pathologie
+- Depuis le calendrier
+
+### Informations de consultation
+
+Lors de la création d'une consultation, l'utilisateur peut renseigner :
+
+- Le titre
+- Le type de consultation
+- La date de début
+- La durée
+- Le praticien
+- Le patient
+- Le nouveau statut de forme courant
+- La pathologie liée
+
+La consultation peut ainsi être rattachée directement à un dossier existant et enrichir immédiatement le suivi de la pathologie concernée.
+
+### Types de consultation
+
+Les types de consultation sont configurables dans le module. Ils permettent d'adapter l'outil à l'organisation et aux pratiques de la structure.
+
+Parmi les types visibles dans cette nouvelle version, on retrouve notamment :
+
+- Avis spécialiste
+- Blessure
+- Maladie
+- Kiné
+- Podologie
+- Nutrition / diététique
+- Soins / massage
+- Strapping / taping
+- Validation de reprise
+- Traumatologie
+- Certificat / administratif
+
+Les types de consultation peuvent aussi être distingués selon une logique **médicale** ou **paramédicale**, afin de mieux cadrer les usages selon les droits et les profils concernés.
+
+### Visibilité de la consultation
+
+La consultation dispose de sa propre logique de visibilité. Elle détermine quelles personnes peuvent voir l'événement dans le calendrier et dans les listes.
+
+Cette visibilité repose notamment sur :
+
+- Le niveau de rôle autorisé
+- Les équipes concernées
+- La visibilité éventuelle pour le patient
+
+### Les consultations comme événements du calendrier
+
+Les consultations sont de vrais événements de calendrier. Cela signifie qu'elles peuvent :
+
+- Être créées dans le module médical
+- Être visibles dans le calendrier des staffs
+- Être visibles dans le calendrier du joueur si la visibilité patient est activée
+- Structurer l'agenda médical quotidien
+
+Ce point est important dans la philosophie du module, car il relie directement le suivi médical à l'organisation opérationnelle du quotidien.
+
+---
+
+## Ajouter des notes à une consultation
+
+Chaque consultation peut contenir plusieurs notes. Les notes permettent d'ajouter de l'information détaillée, de conserver une trace écrite du suivi et de partager des contenus différents selon les destinataires autorisés.
+
+### Catégories de notes
+
+Les catégories visibles dans cette nouvelle version sont les suivantes :
+
+- Notes médicales
+- Notes paramédicales
+- Notes du patient
+- Notes privées
+
+### Logique de lecture
+
+Le module distingue clairement deux niveaux :
+
+| Niveau | Rôle |
+|---|---|
+| **La consultation** | Définit qui voit l'événement |
+| **La note** | Définit qui voit le contenu détaillé |
+
+Cette séparation apporte une vraie finesse dans la gestion de l'information sensible.
+
+### Traçabilité
+
+Chaque note appartient à son auteur. Cela garantit :
+
+- La traçabilité des contributions
+- La responsabilité de la saisie
+- La possibilité pour plusieurs utilisateurs d'ajouter leurs propres informations dans une même consultation
+
+---
+
+## Documents liés aux consultations et aux pathologies
+
+Les documents peuvent être ajoutés dans le cadre d'une consultation puis retrouvés dans la pathologie liée. Cette logique permet de consolider automatiquement les pièces utiles dans le bon dossier.
+
+### Actions possibles sur les documents
+
+Les documents peuvent être :
+
+- Ajoutés
+- Visualisés
+- Modifiés
+- Supprimés
+- Partagés selon différents niveaux de visibilité
+
+Grâce à cette consolidation, la pathologie devient une vue complète du cas médical, incluant à la fois les informations saisies et les pièces jointes utiles au suivi.
+
+---
+
+## Connecter et paramétrer Askamon
+
+La synchronisation Askamon reste disponible dans cette nouvelle version. Le module permet de connecter un compte Askamon et de mapper les patients issus d'Askamon avec les joueurs présents dans MyCoach Pro.
+
+Cette synchronisation a pour objectif :
+
+- D'éviter les doubles saisies
+- De gagner du temps
+- De fluidifier les échanges entre outils lorsque l'organisation utilise déjà Askamon
+
+Lors de la création d'une pathologie, il est également possible de définir si le dossier doit être synchronisé avec Askamon.
+
+---
+
+## Statistiques et épidémiologie
+
+Le module intègre une partie statistique dédiée à l'épidémiologie. Cette couche d'analyse s'appuie sur les pathologies, les états de forme et les données d'exposition calculées dans la plateforme.
+
+L'objectif n'est pas seulement de compter les blessures, mais de permettre une lecture plus large du suivi médical collectif et individuel.
+
+<iframe width="560" height="315"
+  src="https://www.youtube.com/embed/VoWjHL_VOFQ"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+
+### Indicateurs collectifs
+
+La vue statistique peut notamment afficher :
+
+- Le nombre de blessures
+- Le nombre de joueurs blessés
+- Le nombre de maladies
+- Le nombre de joueurs malades
+- L'exposition en heures
+- L'incidence
+- L'injury burden
+
+### Timeline collective des joueurs
+
+Une timeline par joueur permet de visualiser :
+
+- Les périodes d'état de forme
+- Les périodes d'indisponibilité
+- Les blessures dans le temps
+- Les chevauchements éventuels entre plusieurs cas
+
+### Lecture individuelle
+
+Lorsqu'un patient est ouvert, le module peut afficher une lecture individuelle de ses indicateurs et de son historique.
+La  statistique complète donc le suivi quotidien en apportant une lecture transversale de l'information médicale.
+
+---
+
+## Paramétrer les échelles de couleur blessure
+
+Le module permet de définir des échelles de couleur personnalisées pour certaines vues statistiques. Ce paramétrage permet d'adapter la lecture aux codes internes de l'organisation et de rendre les tableaux plus lisibles.
+
+Les vues concernées incluent notamment :
+
+- L'indisponibilité collective
+- Le nombre de blessures collectives
+- L'indisponibilité individuelle
+
+---
+
+## Paramétrer l'exposition aux blessures
+
+Le calcul de l'exposition aux blessures est paramétrable dans le module. L'utilisateur peut définir quels événements entrent dans le calcul, par exemple :
+
+- Les matchs
+- Les séances
+- Les séances joueur
+- Le suivi joueur
+
+Il est également possible de choisir l'unité utilisée pour certaines durées GPS et de sélectionner les typologies de séances prises en compte.
+
+> Ce paramétrage est important, car il conditionne la cohérence des indicateurs épidémiologiques affichés dans le module.
+
+---
+
+## Confidentialité et matrice des droits
+
+La nouvelle version du module médical repose sur une logique de confidentialité fine. Cette logique ne dépend pas d'un seul niveau d'autorisation. Elle combine plusieurs filtres :
+
+- Les droits du profil utilisateur
+- Le caractère médical ou paramédical de certaines actions
+- La visibilité de la consultation
+- La visibilité propre à chaque note
+- La visibilité des documents
+- L'accès éventuel du patient
+
+Cette architecture permet de partager l'information utile avec les bonnes personnes, sans compromettre la sensibilité des données médicales.
+
+### Tables des droits
+
+- Table des droits sur les **pathologies**
+![](https://codaio.imgix.net/docs/YbIUWzgdgc/blobs/bl-a2pCEWtAF9/00b3443621069468b3bbc6b17b256d089c020cc70dbff3add9d1be9bfdcf268ebfbf2c761445c12076834c7c5361078abc5fd842585b0e5931b335254c79840a9576a07a1ab00a96a02af151b60e8a824f4a3159a1b1e05702e870b5142cae368a0739ca?auto=format%2Ccompress&fit=max)
+
+- Table des droits sur les **consultations**
+![](https://codaio.imgix.net/docs/YbIUWzgdgc/blobs/bl-zoUx-EZejE/bd9c92c8fca52d6a7474884c0a1eee43b67eb3980e6152cea68040116e6a5e3d8c57498b3cf4beb8d4549aa6e0b683395de35544d86ab44bdfdf900b651865dcbc0912e624d9bceeda576501385d6116946472a953ce58e5b1838e685f7c0678bd30f4e5?auto=format%2Ccompress&fit=max)
+
+- Table des droits sur les **notes**
+![](https://codaio.imgix.net/docs/YbIUWzgdgc/blobs/bl-5UVolvaHtz/f404b1e8536110f997805212f68cf97d6c1601ef5684bf79fb2113af09036626acb40ae1709d120f9bab159307dec6745aec9800f8824163d2d8fc27e72749f1dc11d5f2862f2aa3769e20d6ac02d3ead45acd40e13fd57c248ea7540876aeee4da4a118?auto=format%2Ccompress&fit=max)
+
+---
+
+## Sécurité et hébergement des données
+
+Les données médicales sont hébergées sur des serveurs certifiés **HDS**. Ce point répond aux exigences de sécurité et d'hébergement attendues pour des données sensibles de santé.
+
+---
+
+## Synthèse
+
+Le module médical web de MyCoach Pro fait évoluer le médical d'un simple espace de saisie vers un environnement complet de gestion, de suivi et d'analyse.
+
+Son fonctionnement repose sur quelques principes forts :
+
+- Une **pathologie** qui devient l'élément central
+- Une **consultation** qui devient un véritable événement de suivi
+- Des **notes** qui permettent de répartir l'information selon les bons niveaux de visibilité
+- Des **documents** consolidés directement dans le dossier
+- Une **lecture statistique** qui prolonge le suivi quotidien par une analyse épidémiologique
+
+L'ensemble permet un suivi plus structuré, une meilleure circulation de l'information et une exploitation plus claire des données médicales dans le temps.
+
+---
+
+## Tips et astuces utilisateurs
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z0wtrJAZv8U?si=LJ0Q1HdSEGxASkKT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

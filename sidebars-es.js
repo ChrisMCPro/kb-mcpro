@@ -30,13 +30,12 @@ const sidebars = {
       ],
     },
 
-    // 3. Joueurs
+    // 3. Joueurs — add-official-players retiré (FFF uniquement)
     {
       type: 'category',
       label: 'Joueurs',
       link: { type: 'generated-index' },
       items: [
-        'joueurs/add-official-players',
         'joueurs/create-player',
         'joueurs/edit-player',
         'joueurs/send-credentials',
@@ -71,14 +70,12 @@ const sidebars = {
       items: ['matchs/import-objective-data'],
     },
 
-    // 7. Insights (Formulaires + Rapports seulement)
+    // 7. Insights
     {
       type: 'category',
       label: 'Insights',
       link: { type: 'generated-index' },
       items: [
-
-
         {
           type: 'category',
           label: 'Formulaires',
@@ -128,7 +125,7 @@ const sidebars = {
       ],
     },
 
-    // 10. Statistiques (Performance)
+    // 10. Statistiques
     {
       type: 'category',
       label: 'Statistiques',
@@ -167,7 +164,7 @@ const sidebars = {
       items: ['Paranètres/season-change'],
     },
 
-    // 14. Scouting (avant-dernier)
+    // 14. Scouting
     {
       type: 'category',
       label: 'Scouting',
@@ -180,41 +177,35 @@ const sidebars = {
       ],
     },
 
-    // 15. Application Mobile (dernier)
-    {
-  type: 'category',
-  label: 'Application Mobile',
-  link: { type: 'generated-index' },
-  items: [
-
+    // 15. Application Mobile
     {
       type: 'category',
-      label: 'Joueurs', 
-      key: 'mobile-joueurs',  // ← Évite le conflit
+      label: 'Application Mobile',
+      link: { type: 'generated-index' },
       items: [
-        'app-mobile/joueurs/create-player-session',
-        'app-mobile/joueurs/fresh-start',
-        'app-mobile/joueurs/health-data',
-        // ...
+        {
+          type: 'category',
+          label: 'Joueurs',
+          key: 'mobile-joueurs',
+          items: [
+            'app-mobile/joueurs/create-player-session',
+            'app-mobile/joueurs/fresh-start',
+            'app-mobile/joueurs/health-data',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Staff',
+          key: 'mobile-staff',
+          items: [
+            'app-mobile/staff/create-player-session',
+            'medical/medical_mobile',
+          ],
+        },
+        'app-mobile/notification-disabled',
+        'app-mobile/resync-token',
       ],
     },
-    
-    {
-      type: 'category',
-      label: 'Staff',
-      key: 'mobile-staff',
-      items: [
-        'app-mobile/staff/create-player-session',
-        'medical/medical_mobile',
-      ],
-    },
-
-    'app-mobile/notification-disabled',
-    'app-mobile/resync-token',
-  ],
-
-  
-},
   ],
 };
 export default sidebars;

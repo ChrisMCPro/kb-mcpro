@@ -1,56 +1,58 @@
 ---
-title: "Épidémiologie & indicateurs"
-description: "Mesurer l’exposition, l’incidence et le fardeau, au niveau équipe et joueur."
+title: "Epidemiology & indicators"
+description: "Measure exposure, incidence, and burden at team and player level."
 ---
 
+# Epidemiology & indicators
 
-# Épidémiologie & indicateurs
+This section turns the entered data into indicators to support prevention and squad monitoring.
 
-Cette partie transforme les données saisies en indicateurs pour piloter la prévention et le suivi de l’effectif.
+All indicators are normalized to 1000 hours of activity so they can be compared over time and across groups.
 
+## Prerequisite: severity scale
 
-Tous les indicateurs sont normalisés sur 1000 heures de pratique, afin de comparer dans le temps et entre groupes.
+The module relies on a configurable **severity scale** based on the number of days unavailable.  
+Common example:
 
+- 1 to 7 days: minor
+- 7 to 25 days: moderate
+- 25 days or more: severe
 
-## Prérequis : échelle de gravité
+## Indicator definitions
 
-Le module s’appuie sur une **échelle de gravité** (configurable) basée sur le nombre de jours d’indisponibilité.  
-Exemple courant :
-- 1 à 7 jours : légère  
-- 7 à 25 jours : modérée  
-- ≥ 25 jours : grave  
+### Exposure (in hours)
+Total training and match duration.
 
-## Définitions des indicateurs
+When multiple sources exist, the following priority is applied:
 
-###  Exposition (en heures)
-Somme des durées d’entraînement et de match.
-Quand plusieurs sources existent, une priorité est appliquée :
-1) durée GPS  
-2) durée individuelle saisie (ex. charge / RPE)  
-3) durée planifiée de la séance
+1. GPS duration
+2. Individually entered duration (for example: load / RPE)
+3. Planned session duration
 
-###  Incidence (fréquence)
-Mesure la fréquence d’apparition des blessures.
+### Incidence (frequency)
+Measures how often injuries occur.
 
-Formule :
-`(Nombre de blessures / Exposition totale) × 1000`
+Formula:
+`(Number of injuries / Total exposure) × 1000`
 
-###  Fardeau (impact)
-Mesure l’impact des blessures sur l’effectif en intégrant les jours d’indisponibilité.
+### Burden (impact)
+Measures the impact of injuries on the squad by including days unavailable.
 
-Formule :
-`(Jours d’indisponibilité / Exposition totale) × 1000`
+Formula:
+`(Days unavailable / Total exposure) × 1000`
 
-## Lecture au niveau équipe
+## Team-level view
 
-Les indicateurs permettent notamment de suivre :
-- la volumétrie (blessures, maladies, joueurs concernés)
-- l’exposition collective
-- l’incidence collective
-- le fardeau collectif
+The indicators make it possible to track:
 
-## Lecture au niveau joueur
+- volume (injuries, illnesses, players affected)
+- collective exposure
+- collective incidence
+- collective burden
 
-Les mêmes indicateurs peuvent être consultés à l’échelle individuelle, afin de :
-- suivre la saison du joueur (historique)
-- comparer les contextes (global / entraînement / match) selon votre paramétrage
+## Player-level view
+
+The same indicators can also be viewed individually in order to:
+
+- track the player’s season (history)
+- compare contexts (overall / training / match) depending on your setup

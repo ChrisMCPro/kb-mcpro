@@ -1,64 +1,61 @@
 ---
 title: "Pathologies"
-description: "Créer, documenter, partager au bon niveau, clôturer."
+description: "Create, document, share at the right level, close."
 ---
-
 
 # Pathologies
 
-Une **pathologie** est la fiche centrale du module médical.  
-Elle représente un incident de santé impactant un joueur :
-- **Blessure** : dommage physique
-- **Maladie** : affection organique ou virale
+A **pathology** is the central record in the medical module.  
+It represents a health incident affecting a player:
 
-## Création d’une pathologie
+- **Injury**: physical damage
+- **Illness**: organic or viral condition
 
+## Creating a pathology
 
-###  Sélectionner le joueur
-Vous rattachez la pathologie à un joueur.
+### Select the player
+You link the pathology to a player.
 
-###  Choisir le type : blessure ou maladie
-Le type détermine la structure de la classification.
+### Choose the type: injury or illness
+The type determines the classification structure.
 
-###  Renseigner le diagnostic via une classification standardisée
-La pathologie est structurée selon une classification médicale (OSIICS) :
-- Blessure : Région → Type → Diagnostic
-- Maladie : Système → Étiologie → Diagnostic
+### Enter the diagnosis using a standard classification
+The pathology is structured according to a medical classification (OSIICS):
 
-###  Référence (classification)
-- Historique des versions de la classification OSIICS https://www.johnorchard.com/osiics-version-history.html
+- Injury: Region → Type → Diagnosis
+- Illness: System → Etiology → Diagnosis
 
-###  Renseigner les dates clés
-- Date de déclaration (survenue)
-- Date de retour estimée (prévisionnel sportif)
-- Date de retour effective (retour réel)
+### Classification reference
+- OSIICS version history: https://www.johnorchard.com/osiics-version-history.html
 
-###  Compléter les informations utiles au suivi
-Selon le type, vous pouvez documenter le contexte et les éléments nécessaires à la prise en charge (ex. récidive, mécanisme, etc.).
+### Enter the key dates
+- Declaration date (onset)
+- Estimated return date (sporting projection)
+- Actual return date (real return)
 
+### Fill in useful follow-up information
+Depending on the type, you can document the context and the information needed for care (for example: recurrence, mechanism, etc.).
 
-## Règles de disponibilité
+## Availability rules
 
+Creation: creating a pathology automatically sets the player status to “Injured” (unavailable).
 
-Création : la création d’une pathologie bascule automatiquement le statut du joueur en “Blessé” (indisponible).
+The pathology is considered **closed** when the **actual return date** is entered.
 
+The module manages sporting unavailability, not administrative sick leave.
 
-La pathologie est considérée comme **clôturée** lorsque la **date de retour effective** est renseignée.
+## Notes and communication (4 areas)
 
+To protect confidentiality, notes are split into 4 areas:
 
-Le module gère l’indisponibilité sportive, pas un arrêt de travail administratif.
+- **Medical note**: doctors only
+- **Paramedical note**: doctors + paramedical staff
+- **General note**: visible to authorized profiles (including restricted access)
+- **Player note**: visible to the player if sharing is enabled
 
+## Sharing with the player (optional)
 
-## Notes et communication (4 zones)
+Sharing to the player app is **configurable** and **granular**:
 
-Pour sécuriser la confidentialité, les notes sont séparées en 4 zones :
-- **Note médicale** : médecins uniquement  
-- **Note paramédicale** : médecins + paramédicaux  
-- **Note globale** : visible par les profils autorisés (y compris accès restreint)  
-- **Note joueur** : visible par le joueur si le partage est activé
-
-## Partage au joueur (optionnel)
-
-Le partage vers l’application joueur est **activable** et **granulaire** :
-- rendre la pathologie visible (oui/non)
-- rendre la note joueur visible (oui/non)
+- make the pathology visible (yes/no)
+- make the player note visible (yes/no)

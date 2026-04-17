@@ -1,0 +1,396 @@
+---
+title: "Médico - WEB"
+description: "Primeros pasos con el nuevo módulo médico."
+---
+# Médico - WEB
+
+**🏗️ En construcción**
+
+## Acceso y organización del módulo
+
+El módulo médico web se integra en un entorno personalizable.
+
+Desde la pantalla de inicio, se pueden añadir accesos directos para acceder más rápidamente a las acciones más frecuentes, en particular:
+
+- Añadir una patología
+- Añadir una consulta
+
+El menú lateral también puede configurarse para adaptar la interfaz al rol y los usos de cada usuario.
+
+En su estructura general, el módulo se organiza en torno a las siguientes entradas:
+
+- Pacientes
+- Consultas
+- Notas
+- Patologías
+- Estadísticas
+- Documentos
+- Medicamentos
+- Configuración
+
+Esta estructura permite navegar por jugador, por tipo de información o por nivel de análisis.
+
+---
+
+## Los pacientes
+
+La pestaña **Pacientes** permite abrir el historial médico de un jugador y encontrar la información principal que le concierne.
+
+Esta vista sirve como punto de entrada individual al módulo. Permite recentrar la lectura en un jugador concreto y encontrar más fácilmente sus patologías, consultas, documentos y elementos de seguimiento.
+
+---
+
+## Crear una patología
+
+La creación de una patología es uno de los puntos centrales del módulo.
+
+Una patología puede crearse desde varios lugares del producto, en particular desde la pantalla de inicio o directamente desde el módulo médico.
+
+### Tipo de patología
+
+Se proponen dos grandes categorías:
+
+- Lesión
+- Enfermedad
+
+### Información general
+
+Al crear una patología, el usuario puede rellenar los elementos estructurales del expediente, en particular:
+
+- El paciente
+- La fecha de inicio
+- El retorno estimado
+- El retorno efectivo
+- El nuevo estado de forma actual
+
+Esta información permite establecer la base del seguimiento e inscribir inmediatamente la patología en la lógica de disponibilidad del jugador.
+
+### Búsqueda OSIICS
+
+La introducción del diagnóstico se ha enriquecido con una búsqueda OSIICS más completa. La búsqueda puede realizarse:
+
+- Por código
+- Por diagnóstico
+
+Esta mejora permite ahorrar tiempo durante la introducción de datos y mejora la estandarización de los datos médicos.
+
+### Campos de descripción
+
+La creación de una patología permite registrar información detallada, en particular:
+
+- Categoría corporal
+- Región
+- Naturaleza
+- Tipo
+- Diagnóstico
+- Código OSIICS
+- Lateralidad
+- Posición
+- Mecanismo de acción
+- Aparición
+- Contacto
+- Ocurrencia
+- Tipo de terreno
+- Patología preexistente
+- Intervención quirúrgica
+
+### Ocurrencia y recaída
+
+Si la patología corresponde a una repetición o a una recaída, puede vincularse a una patología anterior. Esta lógica permite hacer un seguimiento más detallado del historial de un mismo problema médico.
+
+### Vincular la patología a un evento
+
+Una patología puede vincularse a un evento. Este vínculo permite asociar el caso médico a un contexto específico, por ejemplo una sesión de entrenamiento u otro evento de la actividad deportiva. Esta información mejora posteriormente la calidad de lectura del expediente y las estadísticas asociadas.
+
+### Comentarios de patología
+
+La patología integra varios niveles de comentarios para distinguir la información según su nivel de difusión.
+
+Los espacios previstos en esta nueva versión son los siguientes:
+
+- Comentario médico
+- Comentario paramédico
+- Comentario de rendimiento médico
+
+Esta separación permite mantener una circulación útil de la información sin exponer todo el contenido a todos los perfiles.
+
+### La patología como expediente central
+
+Una vez registrada, la patología se convierte en el punto central del seguimiento para el caso en cuestión.
+
+En el detalle de una patología, varias pestañas permiten encontrar una vista consolidada del expediente:
+
+- General
+- Consultas
+- Notas
+- Comentarios
+- Documentos
+
+Esta organización permite comprender rápidamente:
+
+- Qué tiene el jugador
+- Cómo ha evolucionado la situación
+- Qué consultas se han realizado
+- Qué información se ha añadido
+- Qué documentos están disponibles
+
+> La patología no es, por tanto, solo un formulario de declaración. Se convierte en un **expediente de seguimiento completo**.
+
+---
+
+## Crear una consulta
+
+La consulta es una de las evoluciones más importantes del módulo. Ya no se concibe como una simple nota de seguimiento. Se convierte en un verdadero objeto funcional integrado en el módulo y en el calendario.
+
+### Puntos de entrada posibles
+
+Una consulta puede crearse:
+
+- Desde la pantalla de inicio
+- Desde el módulo médico
+- Desde un paciente
+- Desde una patología
+- Desde el calendario
+
+### Información de la consulta
+
+Al crear una consulta, el usuario puede rellenar:
+
+- El título
+- El tipo de consulta
+- La fecha de inicio
+- La duración
+- El profesional
+- El paciente
+- El nuevo estado de forma actual
+- La patología vinculada
+
+La consulta puede así asociarse directamente a un expediente existente y enriquecer inmediatamente el seguimiento de la patología correspondiente.
+
+### Tipos de consulta
+
+Los tipos de consulta son configurables en el módulo. Permiten adaptar la herramienta a la organización y las prácticas del club.
+
+Entre los tipos visibles en esta nueva versión, se encuentran:
+
+- Opinión de especialista
+- Lesión
+- Enfermedad
+- Fisioterapia
+- Podología
+- Nutrición / dietética
+- Cuidados / masaje
+- Vendaje / taping
+- Validación de reincorporación
+- Traumatología
+- Certificado / administrativo
+
+Los tipos de consulta también pueden distinguirse según una lógica **médica** o **paramédica**, para enmarcar mejor los usos según los derechos y perfiles correspondientes.
+
+### Visibilidad de la consulta
+
+La consulta tiene su propia lógica de visibilidad. Determina qué personas pueden ver el evento en el calendario y en las listas.
+
+Esta visibilidad se basa en:
+
+- El nivel de rol autorizado
+- Los equipos implicados
+- La posible visibilidad para el paciente
+
+### Las consultas como eventos del calendario
+
+Las consultas son eventos reales del calendario. Esto significa que pueden:
+
+- Crearse en el módulo médico
+- Ser visibles en el calendario del cuerpo técnico
+- Ser visibles en el calendario del jugador si la visibilidad del paciente está activada
+- Estructurar la agenda médica diaria
+
+Este punto es importante en la filosofía del módulo, ya que conecta directamente el seguimiento médico con la organización operativa diaria.
+
+---
+
+## Añadir notas a una consulta
+
+Cada consulta puede contener varias notas. Las notas permiten añadir información detallada, conservar un registro escrito del seguimiento y compartir contenidos diferentes según los destinatarios autorizados.
+
+### Categorías de notas
+
+Las categorías visibles en esta nueva versión son las siguientes:
+
+- Notas médicas
+- Notas paramédicas
+- Notas del paciente
+- Notas privadas
+
+### Lógica de lectura
+
+El módulo distingue claramente dos niveles:
+
+| Nivel | Función |
+|---|---|
+| **La consulta** | Define quién ve el evento |
+| **La nota** | Define quién ve el contenido detallado |
+
+Esta separación aporta una verdadera precisión en la gestión de la información sensible.
+
+### Trazabilidad
+
+Cada nota pertenece a su autor. Esto garantiza:
+
+- La trazabilidad de las contribuciones
+- La responsabilidad de la introducción de datos
+- La posibilidad de que varios usuarios añadan su propia información en una misma consulta
+
+---
+
+## Documentos vinculados a consultas y patologías
+
+Los documentos pueden añadirse en el marco de una consulta y encontrarse posteriormente en la patología vinculada. Esta lógica permite consolidar automáticamente los archivos útiles en el expediente correcto.
+
+### Acciones posibles sobre los documentos
+
+Los documentos pueden ser:
+
+- Añadidos
+- Visualizados
+- Modificados
+- Eliminados
+- Compartidos según diferentes niveles de visibilidad
+
+Gracias a esta consolidación, la patología se convierte en una vista completa del caso médico, incluyendo tanto la información introducida como los archivos adjuntos útiles para el seguimiento.
+
+---
+
+## Conectar y configurar Askamon
+
+La sincronización con Askamon sigue disponible en esta nueva versión. El módulo permite conectar una cuenta de Askamon y vincular los pacientes de Askamon con los jugadores presentes en MyCoach Pro.
+
+El objetivo de esta sincronización es:
+
+- Evitar la doble introducción de datos
+- Ahorrar tiempo
+- Facilitar los intercambios entre herramientas cuando la organización ya utiliza Askamon
+
+Al crear una patología, también es posible definir si el expediente debe sincronizarse con Askamon.
+
+---
+
+## Estadísticas y epidemiología
+
+El módulo incluye una sección estadística dedicada a la epidemiología. Esta capa de análisis se basa en las patologías, los estados de forma y los datos de exposición calculados en la plataforma.
+
+El objetivo no es solo contar las lesiones, sino permitir una lectura más amplia del seguimiento médico colectivo e individual.
+
+<iframe width="560" height="315"
+  src="https://www.youtube.com/embed/VoWjHL_VOFQ"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+
+### Indicadores colectivos
+
+La vista estadística puede mostrar:
+
+- Número de lesiones
+- Número de jugadores lesionados
+- Número de enfermedades
+- Número de jugadores enfermos
+- Exposición en horas
+- Incidencia
+- Carga de lesiones (injury burden)
+
+### Línea de tiempo colectiva de jugadores
+
+Una línea de tiempo por jugador permite visualizar:
+
+- Los períodos de estado de forma
+- Los períodos de no disponibilidad
+- Las lesiones a lo largo del tiempo
+- Los posibles solapamientos entre varios casos
+
+### Lectura individual
+
+Cuando se abre un paciente, el módulo puede mostrar una lectura individual de sus indicadores y su historial.
+Las estadísticas complementan así el seguimiento diario aportando una lectura transversal de la información médica.
+
+---
+
+## Configurar las escalas de color de lesiones
+
+El módulo permite definir escalas de color personalizadas para determinadas vistas estadísticas. Esta configuración adapta la lectura a los códigos internos de la organización y hace las tablas más legibles.
+
+Las vistas implicadas incluyen:
+
+- No disponibilidad colectiva
+- Número de lesiones colectivas
+- No disponibilidad individual
+
+---
+
+## Configurar la exposición a lesiones
+
+El cálculo de la exposición a lesiones es configurable en el módulo. El usuario puede definir qué eventos se incluyen en el cálculo, por ejemplo:
+
+- Los partidos
+- Las sesiones de entrenamiento
+- Las sesiones del jugador
+- El seguimiento del jugador
+
+También es posible elegir la unidad utilizada para determinadas duraciones GPS y seleccionar los tipos de sesiones tenidos en cuenta.
+
+> Esta configuración es importante, ya que determina la coherencia de los indicadores epidemiológicos mostrados en el módulo.
+
+---
+
+## Confidencialidad y matriz de derechos
+
+La nueva versión del módulo médico se basa en una lógica de confidencialidad detallada. Esta lógica no depende de un único nivel de autorización. Combina varios filtros:
+
+- Los derechos del perfil de usuario
+- El carácter médico o paramédico de determinadas acciones
+- La visibilidad de la consulta
+- La visibilidad propia de cada nota
+- La visibilidad de los documentos
+- El posible acceso del paciente
+
+Esta arquitectura permite compartir la información útil con las personas adecuadas, sin comprometer la sensibilidad de los datos médicos.
+
+### Tablas de derechos
+
+- Tabla de derechos sobre **patologías**
+![](https://codaio.imgix.net/docs/YbIUWzgdgc/blobs/bl-a2pCEWtAF9/00b3443621069468b3bbc6b17b256d089c020cc70dbff3add9d1be9bfdcf268ebfbf2c761445c12076834c7c5361078abc5fd842585b0e5931b335254c79840a9576a07a1ab00a96a02af151b60e8a824f4a3159a1b1e05702e870b5142cae368a0739ca?auto=format%2Ccompress&fit=max)
+
+- Tabla de derechos sobre **consultas**
+![](https://codaio.imgix.net/docs/YbIUWzgdgc/blobs/bl-zoUx-EZejE/bd9c92c8fca52d6a7474884c0a1eee43b67eb3980e6152cea68040116e6a5e3d8c57498b3cf4beb8d4549aa6e0b683395de35544d86ab44bdfdf900b651865dcbc0912e624d9bceeda576501385d6116946472a953ce58e5b1838e685f7c0678bd30f4e5?auto=format%2Ccompress&fit=max)
+
+- Tabla de derechos sobre **notas**
+![](https://codaio.imgix.net/docs/YbIUWzgdgc/blobs/bl-5UVolvaHtz/f404b1e8536110f997805212f68cf97d6c1601ef5684bf79fb2113af09036626acb40ae1709d120f9bab159307dec6745aec9800f8824163d2d8fc27e72749f1dc11d5f2862f2aa3769e20d6ac02d3ead45acd40e13fd57c248ea7540876aeee4da4a118?auto=format%2Ccompress&fit=max)
+
+---
+
+## Seguridad y alojamiento de datos
+
+Los datos médicos se alojan en servidores con certificación **HDS**. Esto cumple con los requisitos de seguridad y alojamiento esperados para datos sanitarios sensibles.
+
+---
+
+## Síntesis
+
+El módulo médico web de MyCoach Pro hace evolucionar la gestión médica de un simple espacio de introducción de datos a un entorno completo de gestión, seguimiento y análisis.
+
+Su funcionamiento se basa en algunos principios fundamentales:
+
+- Una **patología** que se convierte en el elemento central
+- Una **consulta** que se convierte en un verdadero evento de seguimiento
+- **Notas** que permiten distribuir la información según los niveles de visibilidad adecuados
+- **Documentos** consolidados directamente en el expediente
+- Una **lectura estadística** que prolonga el seguimiento diario mediante un análisis epidemiológico
+
+En conjunto, esto permite un seguimiento más estructurado, una mejor circulación de la información y una explotación más clara de los datos médicos a lo largo del tiempo.
+
+---
+
+## Consejos y trucos para usuarios
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z0wtrJAZv8U?si=LJ0Q1HdSEGxASkKT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

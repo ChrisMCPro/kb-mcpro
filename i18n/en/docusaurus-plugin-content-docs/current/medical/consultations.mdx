@@ -1,53 +1,50 @@
 ---
 title: "Consultations"
-description: "Planifier un acte de soin, contrôler la confidentialité, relier au suivi."
+description: "Schedule a care event, control confidentiality, and link it to follow-up."
 ---
-
 
 # Consultations
 
-Une **consultation** est un acte de soin ou de suivi **planifié**.  
-Elle implique :
-- un **praticien** (personne en charge)
-- un **patient** (le joueur)
-- un lien possible avec une **pathologie** (blessure/maladie)
+A **consultation** is a planned care or follow-up event.  
+It involves:
 
-## Créer une consultation
+- a **practitioner** (the person in charge)
+- a **patient** (the player)
+- a possible link to a **pathology** (injury/illness)
 
+## Create a consultation
 
-### 1) Sélectionner le joueur (patient)
-Le rendez-vous est rattaché au joueur concerné.
+### 1) Select the player (patient)
+The appointment is linked to the relevant player.
 
-### 2) Désigner le praticien
-Vous sélectionnez la personne qui réalise l’acte.
+### 2) Assign the practitioner
+You select the person who will carry out the consultation.
 
-### 3) Choisir un type de consultation
-Les types sont configurables selon votre organisation.
+### 3) Choose a consultation type
+Types are configurable according to your organization.
 
-### 4) Définir la confidentialité
-Vous choisissez qui peut voir le détail de la consultation (voir ci-dessous).
+### 4) Set confidentiality
+You choose who can see the consultation details (see below).
 
-### 5) (Optionnel) Relier à une pathologie
-Recommandé pour garder un historique clair entre l’incident de santé et les actes réalisés.
+### 5) (Optional) Link it to a pathology
+This is recommended to keep a clear history between the health incident and the actions taken.
 
+## Confidentiality: visibility levels
 
-## Confidentialité : niveaux de visibilité
+The consultation can be visible to:
 
-La consultation peut être visible :
-1. **Médecins uniquement**
-2. **Médecins + paramédicaux**
-3. **Médecins + paramédicaux + accès restreint (encadrement sportif)**
-4. **Privé** (créateur + praticien)
-5. **Spécifique** (liste nominative)
+1. **Doctors only**
+2. **Doctors + paramedical staff**
+3. **Doctors + paramedical staff + restricted access (sports staff)**
+4. **Private** (creator + practitioner)
+5. **Specific** (named list)
 
-### Règle de masquage (“Occupé”)
+### Masking rule (“Busy”)
 
+If a user does not have the rights, they will only see a “BUSY” time slot, with no details.
 
-Si un utilisateur n’a pas les droits, il voit uniquement un créneau “OCCUPÉ”, sans aucun détail.
+## Link a consultation to a pathology (3 cases)
 
-
-## Lier une consultation à une pathologie (3 cas)
-
-- **Lier une pathologie existante** : sélection parmi les pathologies ouvertes (ou récentes) du joueur
-- **Créer la pathologie depuis la consultation** : création immédiate, puis lien automatique
-- **Lier a posteriori** : lien possible même après la consultation
+- **Link an existing pathology**: select from the player’s open (or recent) pathologies.
+- **Create the pathology from the consultation**: immediate creation, then automatic link.
+- **Link it later**: the link can also be added after the consultation.

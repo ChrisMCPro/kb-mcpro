@@ -37,10 +37,10 @@ const sidebars = {
       link: { type: 'generated-index' },
       items: [
         'joueurs/add-official-players',
+        'joueurs/change-player-team',
         'joueurs/create-player',
         'joueurs/edit-player',
         'joueurs/send-credentials',
-        'joueurs/change-player-team',
       ],
     },
 
