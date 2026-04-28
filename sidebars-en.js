@@ -140,7 +140,7 @@ const sidebars = {
     // 11. Média Center
     {
       type: 'category',
-      label: 'Média Center',
+      label: 'Media Center',
       link: { type: 'generated-index' },
       items: ['Média Center/feed-view-mediacenter'],
     },

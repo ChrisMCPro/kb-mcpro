@@ -1,64 +1,61 @@
 ---
-title: "Pathologies"
-description: "Créer, documenter, partager au bon niveau, clôturer."
+title: "Patologías"
+description: "Crear, documentar, compartir con el nivel adecuado y cerrar."
 ---
 
+# Patologías
 
-# Pathologies
+Una **patología** es la ficha central del módulo médico.  
+Representa un incidente de salud que afecta a un jugador:
 
-Une **pathologie** est la fiche centrale du module médical.  
-Elle représente un incident de santé impactant un joueur :
-- **Blessure** : dommage physique
-- **Maladie** : affection organique ou virale
+- **Lesión**: daño físico.
+- **Enfermedad**: afección orgánica o viral.
 
-## Création d’une pathologie
+## Creación de una patología
 
+### Seleccionar al jugador
+Vinculas la patología a un jugador.
 
-###  Sélectionner le joueur
-Vous rattachez la pathologie à un joueur.
+### Elegir el tipo: lesión o enfermedad
+El tipo determina la estructura de la clasificación.
 
-###  Choisir le type : blessure ou maladie
-Le type détermine la structure de la classification.
+### Introducir el diagnóstico mediante una clasificación estandarizada
+La patología se estructura según una clasificación médica (OSIICS):
 
-###  Renseigner le diagnostic via une classification standardisée
-La pathologie est structurée selon une classification médicale (OSIICS) :
-- Blessure : Région → Type → Diagnostic
-- Maladie : Système → Étiologie → Diagnostic
+- Lesión: Región → Tipo → Diagnóstico.
+- Enfermedad: Sistema → Etiología → Diagnóstico.
 
-###  Référence (classification)
-- Historique des versions de la classification OSIICS https://www.johnorchard.com/osiics-version-history.html
+### Referencia de la clasificación
+- Historial de versiones de la clasificación OSIICS: https://www.johnorchard.com/osiics-version-history.html
 
-###  Renseigner les dates clés
-- Date de déclaration (survenue)
-- Date de retour estimée (prévisionnel sportif)
-- Date de retour effective (retour réel)
+### Introducir las fechas clave
+- Fecha de declaración (aparición).
+- Fecha estimada de retorno (previsto deportivo).
+- Fecha real de retorno (retorno efectivo).
 
-###  Compléter les informations utiles au suivi
-Selon le type, vous pouvez documenter le contexte et les éléments nécessaires à la prise en charge (ex. récidive, mécanisme, etc.).
+### Completar la información útil para el seguimiento
+Según el tipo, puedes documentar el contexto y los elementos necesarios para la atención del caso, por ejemplo una recaída o el mecanismo.
 
+## Reglas de disponibilidad
 
-## Règles de disponibilité
+La creación de una patología cambia automáticamente el estado del jugador a “Lesionado” (indisponible).
 
+La patología se considera **cerrada** cuando se rellena la **fecha real de retorno**.
 
-Création : la création d’une pathologie bascule automatiquement le statut du joueur en “Blessé” (indisponible).
+El módulo gestiona la indisponibilidad deportiva, no una baja laboral administrativa.
 
+## Notas y comunicación
 
-La pathologie est considérée comme **clôturée** lorsque la **date de retour effective** est renseignée.
+Para proteger la confidencialidad, las notas se separan en 4 zonas:
 
+- **Nota médica**: solo médicos.
+- **Nota paramédica**: médicos + paramédicos.
+- **Nota global**: visible para los perfiles autorizados, incluido acceso restringido.
+- **Nota jugador**: visible para el jugador si la compartición está activada.
 
-Le module gère l’indisponibilité sportive, pas un arrêt de travail administratif.
+## Compartir con el jugador
 
+La compartición hacia la aplicación del jugador es **activable** y **granular**:
 
-## Notes et communication (4 zones)
-
-Pour sécuriser la confidentialité, les notes sont séparées en 4 zones :
-- **Note médicale** : médecins uniquement  
-- **Note paramédicale** : médecins + paramédicaux  
-- **Note globale** : visible par les profils autorisés (y compris accès restreint)  
-- **Note joueur** : visible par le joueur si le partage est activé
-
-## Partage au joueur (optionnel)
-
-Le partage vers l’application joueur est **activable** et **granulaire** :
-- rendre la pathologie visible (oui/non)
-- rendre la note joueur visible (oui/non)
+- hacer visible la patología: sí / no.
+- hacer visible la nota jugador: sí / no.

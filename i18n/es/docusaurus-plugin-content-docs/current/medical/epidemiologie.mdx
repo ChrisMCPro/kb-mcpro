@@ -1,56 +1,59 @@
 ---
-title: "Épidémiologie & indicateurs"
-description: "Mesurer l’exposition, l’incidence et le fardeau, au niveau équipe et joueur."
+title: "Epidemiología e indicadores"
+description: "Medir la exposición, la incidencia y la carga, a nivel equipo y jugador."
 ---
 
+# Epidemiología e indicadores
 
-# Épidémiologie & indicateurs
+Esta sección transforma los datos registrados en indicadores para orientar la prevención y el seguimiento de la plantilla.
 
-Cette partie transforme les données saisies en indicateurs pour piloter la prévention et le suivi de l’effectif.
+Todos los indicadores se normalizan sobre 1000 horas de práctica, para poder comparar en el tiempo y entre grupos.
 
+## Requisito previo: escala de gravedad
 
-Tous les indicateurs sont normalisés sur 1000 heures de pratique, afin de comparer dans le temps et entre groupes.
+El módulo se apoya en una **escala de gravedad** configurable basada en el número de días de indisponibilidad.  
+Ejemplo habitual:
 
+- 1 a 7 días: leve.
+- 7 a 25 días: moderada.
+- 25 días o más: grave.
 
-## Prérequis : échelle de gravité
+## Definición de los indicadores
 
-Le module s’appuie sur une **échelle de gravité** (configurable) basée sur le nombre de jours d’indisponibilité.  
-Exemple courant :
-- 1 à 7 jours : légère  
-- 7 à 25 jours : modérée  
-- ≥ 25 jours : grave  
+### Exposición (en horas)
+Suma de la duración de los entrenamientos y de los partidos.  
+Cuando existen varias fuentes, se aplica este orden de prioridad:
 
-## Définitions des indicateurs
+1. Duración GPS.
+2. Duración introducida manualmente por el usuario.
+3. Duración planificada de la sesión.
 
-###  Exposition (en heures)
-Somme des durées d’entraînement et de match.
-Quand plusieurs sources existent, une priorité est appliquée :
-1) durée GPS  
-2) durée individuelle saisie (ex. charge / RPE)  
-3) durée planifiée de la séance
+### Incidencia
+Mide la frecuencia de aparición de las lesiones.
 
-###  Incidence (fréquence)
-Mesure la fréquence d’apparition des blessures.
+Fórmula:
 
-Formule :
-`(Nombre de blessures / Exposition totale) × 1000`
+`(Número de lesiones / Exposición total) × 1000`
 
-###  Fardeau (impact)
-Mesure l’impact des blessures sur l’effectif en intégrant les jours d’indisponibilité.
+### Carga
+Mide el impacto de las lesiones sobre la plantilla, integrando los días de indisponibilidad.
 
-Formule :
-`(Jours d’indisponibilité / Exposition totale) × 1000`
+Fórmula:
 
-## Lecture au niveau équipe
+`(Días de indisponibilidad / Exposición total) × 1000`
 
-Les indicateurs permettent notamment de suivre :
-- la volumétrie (blessures, maladies, joueurs concernés)
-- l’exposition collective
-- l’incidence collective
-- le fardeau collectif
+## Lectura a nivel equipo
 
-## Lecture au niveau joueur
+Los indicadores permiten seguir, entre otros:
 
-Les mêmes indicateurs peuvent être consultés à l’échelle individuelle, afin de :
-- suivre la saison du joueur (historique)
-- comparer les contextes (global / entraînement / match) selon votre paramétrage
+- El volumen de casos: lesiones, enfermedades y jugadores afectados.
+- La exposición colectiva.
+- La incidencia colectiva.
+- La carga colectiva.
+
+## Lectura a nivel jugador
+
+Los mismos indicadores pueden consultarse a nivel individual para:
+
+- Seguir la temporada del jugador con su historial.
+- Comparar contextos: global, entrenamiento o partido, según la configuración.

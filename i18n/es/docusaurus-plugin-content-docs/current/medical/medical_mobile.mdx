@@ -1,0 +1,453 @@
+# Médico - Móvil
+
+## Objetivo del módulo
+
+La nueva versión del módulo médico en la aplicación móvil MyCoach Pro - AMS permite crear, consultar y compartir la información médica esencial directamente desde el campo o en movilidad.
+
+Esta versión móvil retoma las principales evoluciones ya disponibles en la web, con un funcionamiento adaptado a un uso rápido y operativo.
+
+---
+
+## Qué cambia en esta versión
+
+El nuevo módulo médico móvil introduce varias evoluciones importantes:
+
+- Un módulo médico completo en móvil, que antes no existía con esta forma.
+- Una creación de patologías más completa y más simple.
+- Las consultas, ahora gestionadas como verdaderos eventos.
+- Las notas, vinculadas a las consultas, con distintos niveles de visibilidad.
+- Los documentos, compartibles según los permisos definidos.
+- La sincronización con Askamon directamente desde el móvil para los casos compatibles.
+
+> ⚠️ **Punto importante**: La parte estadística / epidemiológica sigue disponible solo en la web.
+
+---
+
+## Configuración de la aplicación
+
+Antes de usar el módulo médico, la aplicación móvil puede configurarse para adaptar la pantalla a las necesidades de cada usuario.
+
+### Configuración de la pantalla de inicio
+
+Desde la pantalla de inicio, el usuario puede:
+
+- Elegir los widgets visibles.
+- Definir su orden de aparición.
+- Destacar, por ejemplo, el widget **Estado de forma**.
+
+<iframe width="315" height="560" src="https://www.youtube.com/embed/weFc80KYDzs" frameborder="0" allowfullscreen></iframe>
+
+### Filtro por equipos o grupos
+
+En algunos widgets, es posible elegir:
+
+- Los equipos que se mostrarán.
+- O un grupo concreto de jugadores si el usuario sigue un grupo dedicado.
+
+<iframe width="315" height="560" src="https://www.youtube.com/embed/uygk8BnUw5Y" frameborder="0" allowfullscreen></iframe>
+
+### Configuración del calendario
+
+Desde el widget de calendario, el usuario puede:
+
+- Filtrar ciertos tipos de eventos.
+- Elegir una vista compacta o una vista en tarjetas.
+- Mostrar colores por tipo de evento.
+
+Esta configuración permite que las consultas y los eventos médicos sean más fáciles de leer.
+
+<iframe width="315" height="560" src="https://www.youtube.com/embed/ZDq6VKySeTs" frameborder="0" allowfullscreen></iframe>
+
+### Añadir el módulo médico al menú
+
+El módulo médico puede no estar presente por defecto en la barra de navegación inferior. En ese caso:
+
+1. Abre el **Menú**.
+2. Accede a la **configuración del menú**.
+3. Elige los elementos que quieres mostrar en la barra inferior.
+4. Coloca el módulo **Médico** donde quieras.
+
+La aplicación móvil queda así configurada de la misma manera que la plataforma web.
+
+<iframe width="315" height="560" src="https://www.youtube.com/embed/P33ttlvDzuE" frameborder="0" allowfullscreen></iframe>
+
+---
+
+## Estructura del módulo
+
+El módulo médico se organiza en cuatro entradas principales:
+
+- Patologías
+- Consultas
+- Notas
+- Documentos
+
+Esta estructura permite encontrar rápidamente la información buscada según la necesidad del momento.
+
+### Vista Patologías
+
+La vista Patologías reúne todas las patologías visibles para el usuario. En cada patología se encuentra, entre otros datos:
+
+- La fecha.
+- El paciente.
+- El diagnóstico.
+- La región afectada.
+- La lateralidad.
+- La fecha estimada de retorno.
+- La fecha real de retorno.
+- La consulta vinculada, si existe.
+- La información de una posible ocurrencia anterior.
+- Indicadores o etiquetas asociadas.
+
+### Vista Consultas
+
+La vista Consultas reúne todas las consultas visibles para el usuario, con, entre otros:
+
+- La fecha.
+- El paciente.
+- El tipo de consulta.
+- La patología vinculada, si existe.
+- El profesional.
+- El horario y la duración.
+
+### Vista Notas
+
+La vista Notas centraliza todas las notas que el usuario tiene derecho a consultar, independientemente de su consulta de origen.
+
+### Vista Documentos
+
+La vista Documentos centraliza todos los documentos accesibles para el usuario, estén vinculados a una consulta o a una patología.
+
+---
+
+## Acceso médico desde la ficha del jugador
+
+Además del módulo médico, también es posible acceder a la información médica directamente desde la ficha de un jugador. Desde el perfil del jugador, un filtro permite mostrar solo la parte médica.
+
+En esta vista, el usuario puede encontrar los principales elementos médicos del jugador, entre ellos:
+
+- Las consultas.
+- Las patologías.
+- Los estados de forma.
+- El RTT plan.
+- Las alergias.
+- Las prescripciones.
+- El calendario.
+- Los documentos.
+- El perfil médico.
+
+Esta entrada es especialmente útil para trabajar jugador por jugador.
+
+<iframe width="315" height="560" src="https://www.youtube.com/embed/mazUtgBnc0w" frameborder="0" allowfullscreen></iframe>
+
+---
+
+## Crear una patología
+
+La creación de una patología es uno de los puntos centrales del nuevo módulo médico móvil.
+
+<iframe width="315" height="560" src="https://www.youtube.com/embed/PELZEfhLJCU" frameborder="0" allowfullscreen></iframe>
+
+### Acceso a la creación
+
+Desde la lista de patologías, el usuario puede añadir una nueva patología mediante el botón de añadir. Se proponen dos tipos:
+
+- Lesión
+- Enfermedad
+
+### Pasos de creación
+
+Durante la creación de una patología, el usuario puede introducir:
+
+- El paciente.
+- La fecha estimada de retorno.
+- La fecha real de retorno, si se conoce.
+- El estado del jugador.
+- El diagnóstico.
+
+### Búsqueda del diagnóstico
+
+Al igual que en la web, la búsqueda de diagnóstico está integrada en la introducción de datos. Para ciertas lesiones, un indicador permite saber si la patología puede sincronizarse con Askamon.
+
+> ⚠️ **Regla de sincronización Askamon**: Si el indicador de Askamon no aparece, o si el caso no es elegible, la patología no podrá sincronizarse. Un caso habitual de bloqueo es que el paciente no esté sincronizado con Askamon.
+
+### Descripción detallada de la patología
+
+La versión móvil incluye los mismos campos avanzados que la web. El usuario puede introducir, entre otros:
+
+- La lateralidad.
+- La posición.
+- El mecanismo de acción.
+- La aparición.
+- El contacto.
+- El tipo de superficie.
+- La ocurrencia.
+
+Según el caso, también es posible indicar:
+
+- Una intervención quirúrgica.
+- Una patología preexistente.
+
+### Ocurrencia y antecedente
+
+Si el usuario indica una recaída o una repetición, puede vincular la nueva patología a una patología anterior del jugador.
+
+### Vínculo con un evento
+
+La patología puede vincularse a:
+
+- Un evento de MyCoach.
+- O un evento externo.
+
+En el caso de un evento de MyCoach, el usuario puede, por ejemplo, asociar la lesión a una sesión.
+
+### Comentarios de la patología
+
+Durante la creación, se pueden utilizar tres niveles de comentarios:
+
+- Comentario médico.
+- Comentario paramédico.
+- Comentario staff performance / médico.
+
+#### Visibilidad de los comentarios
+
+| Perfil | Comentarios visibles |
+|---|---|
+| Médico | Los tres comentarios |
+| Paramédico | Los dos últimos |
+| Staff performance / médico | Solo el último |
+
+Esta división permite que la información circule de forma adaptada al rol de cada uno.
+
+### Entender la patología como expediente de seguimiento
+
+Una vez creada, la patología se convierte en un punto central de trabajo. Reúne progresivamente:
+
+- Las consultas vinculadas.
+- Las notas de esas consultas.
+- Los documentos ligados a la patología o a sus consultas.
+
+La patología funciona así como un **expediente de seguimiento médico** para un caso concreto.
+
+---
+
+## Crear una consulta
+
+Desde una patología, es posible crear directamente una consulta vinculada.
+
+<iframe width="315" height="560" src="https://www.youtube.com/embed/nASzq_3_EXw" frameborder="0" allowfullscreen></iframe>
+
+### Naturaleza de la consulta
+
+La consulta se presenta como un nuevo tipo de evento en MyCoach Pro. No solo sirve para el seguimiento médico: también existe como elemento del calendario.
+
+### Información de la consulta
+
+Al crear una consulta, el usuario puede introducir, entre otros:
+
+- El profesional.
+- El paciente.
+- El nuevo estado de forma actual.
+- La patología vinculada.
+- O crear una patología vinculada directamente desde la consulta.
+
+### Visibilidad de la consulta
+
+La consulta incorpora una gestión de visibilidad:
+
+- Visible o no visible para el paciente.
+- Visible para los staffs según los permisos y los equipos seleccionados.
+
+Esta visibilidad permite que las personas concernidas vean el evento en el calendario, con acceso a la información básica, sin exponer todos los datos sensibles.
+
+### Las consultas en el calendario
+
+Las consultas son eventos reales del calendario. Eso significa que son:
+
+- Utilizables en el módulo médico.
+- Visibles en el módulo Calendario.
+- Creables desde el módulo Calendario.
+
+Este punto es clave para integrar el seguimiento médico en la organización diaria de los staffs.
+
+---
+
+## Añadir notas a una consulta
+
+Una vez dentro de una consulta, el usuario puede añadir una o varias notas.
+
+<iframe width="315" height="560" src="https://www.youtube.com/embed/7BhRyyISRpA" frameborder="0" allowfullscreen></iframe>
+
+### Función de las notas
+
+Las notas permiten enriquecer una consulta con información de seguimiento, observación o transmisión.
+
+### Introducción de las notas
+
+Las notas se pueden escribir:
+
+- Con teclado.
+- Con opciones de edición de texto.
+- Con la posibilidad de **dictar** la consulta para ahorrar tiempo.
+
+### Visibilidad de las notas
+
+Cada nota tiene su propia visibilidad. Varios contenidos pueden asociarse a una misma consulta y seguir siendo visibles solo para las personas correctas:
+
+- Una información puede mantenerse privada.
+- Otra puede compartirse con el paramédico.
+- Otras combinaciones pueden definirse según el público autorizado, incluido el paciente en algunos casos.
+
+### Autor de la nota
+
+Cada nota conserva su autor, lo que permite:
+
+- Saber quién introdujo la información.
+- Mantener una trazabilidad clara.
+- Compartir de forma selectiva dentro de una misma consulta.
+
+---
+
+## Añadir documentos
+
+Como en la web, es posible añadir documentos a una consulta.
+
+<iframe width="315" height="560" src="https://www.youtube.com/embed/4wPa1Tn3Osg" frameborder="0" allowfullscreen></iframe>
+
+### Acciones posibles
+
+El usuario puede:
+
+- Subir un archivo.
+- Modificar el documento.
+- Ajustar su visibilidad.
+- Hacer que el documento sea visible para el paciente si es necesario.
+
+### Efecto de consolidación
+
+Una vez subidos, los documentos quedan visibles:
+
+- En la consulta.
+- En la patología vinculada.
+
+Así, la patología ofrece una visión completa de todo lo relacionado con un caso.
+
+---
+
+## Vista de una consulta
+
+Una consulta reúne la información útil en un momento dado, entre ella:
+
+- El paciente.
+- El profesional.
+- La patología vinculada.
+- El historial de patologías del paciente, si hace falta.
+- Las notas tomadas durante o después de la consulta.
+- Los documentos asociados.
+
+Esta vista permite trabajar rápidamente sobre un acto médico concreto.
+
+<iframe width="315" height="560" src="https://www.youtube.com/embed/1_BvbYt1IlQ" frameborder="0" allowfullscreen></iframe>
+
+---
+
+## Vista de una patología
+
+La patología ofrece una vista más global y longitudinal. Desde una patología, es posible consultar:
+
+- Todas las consultas vinculadas.
+- Todas las notas ligadas a esas consultas.
+- Todos los documentos de la patología o de las consultas relacionadas.
+
+La patología se convierte así en la mejor vista para seguir la evolución completa de un expediente.
+
+---
+
+## Sincronización con Askamon en móvil
+
+La sincronización con Askamon está disponible en móvil para los casos compatibles.
+
+### Estados de sincronización
+
+En la lista de patologías, un estado permite identificar:
+
+- Las patologías no sincronizables.
+- Las patologías listas para sincronizar.
+- Las patologías ya sincronizadas.
+
+El usuario puede lanzar la sincronización desde la patología correspondiente. Después del envío, el estado cambia para confirmar que la sincronización se ha realizado correctamente.
+
+---
+
+## Reglas de confidencialidad y compartición
+
+La nueva versión del módulo pone mucho énfasis en la gestión de la confidencialidad. Esta lógica se apoya en varios niveles:
+
+- Visibilidad de los comentarios de la patología.
+- Visibilidad de las consultas.
+- Visibilidad de las notas.
+- Visibilidad de los documentos.
+
+El objetivo es doble: conservar una información fina y útil, y compartir cada dato solo con las personas autorizadas.
+
+---
+
+## Qué permite en la práctica
+
+En el día a día, esta nueva versión permite:
+
+- Registrar rápidamente una lesión o una enfermedad.
+- Estructurar un expediente de seguimiento alrededor de una patología.
+- Crear consultas como eventos integrados en el calendario.
+- Documentar cada consulta con notas de visibilidad controlada.
+- Vincular y compartir documentos.
+- Usar la sincronización con Askamon cuando el caso sea compatible.
+- Encontrar la información por patología, por consulta, por jugador o desde los módulos transversales de Notas y Documentos.
+
+---
+
+## Flujo recomendado
+
+<iframe width="315" height="560" src="https://www.youtube.com/embed/yWZBVLonOBI" frameborder="0" allowfullscreen></iframe>
+
+### 1. Crear una patología
+
+1. Crear una patología de tipo lesión.
+2. Introducir el diagnóstico y los campos descriptivos.
+3. Vincular la patología a una sesión o a un evento externo si hace falta.
+4. Completar los comentarios según el nivel de difusión deseado.
+
+### 2. Seguir el expediente
+
+1. Abrir la patología.
+2. Crear una consulta vinculada.
+3. Rellenar el profesional, el paciente y la visibilidad.
+4. Añadir una o varias notas.
+5. Adjuntar los documentos útiles.
+6. Encontrar después todo en la vista consolidada de la patología.
+
+### 3. Sincronización externa
+
+1. Comprobar que la patología es compatible con Askamon.
+2. Comprobar que el paciente está correctamente sincronizado.
+3. Lanzar la sincronización.
+4. Verificar el cambio de estado después del envío.
+
+---
+
+## Límites de la versión móvil
+
+> ⚠️ La parte **estadística / epidemiológica** no está disponible en móvil. Sigue disponible solo en la web.
+
+---
+
+## Síntesis
+
+El nuevo módulo médico móvil de MyCoach Pro convierte la aplicación en una verdadera herramienta de seguimiento en el campo. La lógica general se apoya en cuatro pilares:
+
+- La **patología** como expediente central.
+- La **consulta** como evento de seguimiento.
+- La **nota** como unidad de información compartible con precisión.
+- El **documento** como archivo adjunto al expediente.
+
+El conjunto permite una introducción rápida, un mejor seguimiento longitudinal, una mejor circulación de la información entre los roles autorizados y una continuidad clara entre el uso médico móvil, el calendario y la plataforma web.

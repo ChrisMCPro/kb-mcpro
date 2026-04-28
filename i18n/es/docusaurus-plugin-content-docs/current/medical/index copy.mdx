@@ -1,129 +1,126 @@
 ---
-title: "Notes technique Medical"
-description: "Notes technique sur le module médical"
+title: "Médical"
+description: "Notes técnicas sobre el módulo médico"
 ---
 
-## Tutoriels
-
-
----
-title: Module médical (refonte) - Pathologies, consultations et notes
----
-
-# Module médical (refonte)
-
-Cette page explique la nouvelle organisation du module médical : **Pathologies**, **Consultations (avec contexte)**, **Notes**, **Documents** et **droits d’accès**.
-
-## Ce qui change
-
-- On ne parle plus de **blessures / maladies** comme objets principaux : tout est regroupé sous **pathologies**.
-- La description des pathologies s’appuie sur **ORCHARD 15 (OSIICS v15)**.
-- Les **consultations** existent toujours, mais elles sont **associées à un contexte**, et ces contextes sont **personnalisables** (comme les types de séances).
-- Un nouveau niveau d’accès est ajouté : **medical_restricted** (encadrement “terrain”).
+## Tutoriales
 
 ---
 
-## Concepts clés
+# Módulo médico (rediseño)
 
-### Pathologie
-Une **pathologie** est l’objet central de suivi médical.
+Esta página explica la nueva organización del módulo médico: **Patologías**, **Consultas (con contexto)**, **Notas**, **Documentos** y **permisos de acceso**.
 
-- Une pathologie peut être liée à **plusieurs consultations**.
-- Une pathologie est décrite avec un **code ORCHARD 15**.
+## Qué cambia
 
-> **Saisie rapide**  
-> Vous pouvez **renseigner directement le code ORCHARD** pour aller plus vite.
+- Ya no se habla de **lesiones / enfermedades** como objetos principales: todo se agrupa bajo **patologías**.
+- La descripción de las patologías se basa en **ORCHARD 15 (OSIICS v15)**.
+- Las **consultas** siguen existiendo, pero están **asociadas a un contexto**, y esos contextos son **personalizables** (igual que los tipos de sesión).
+- Se añade un nuevo nivel de acceso: **medical_restricted** (staff de campo).
 
-### Consultation (avec contexte)
-Une **consultation** est un événement médical rattaché à une pathologie (ex : bilan, suivi, imagerie, etc.).
+---
 
-- Chaque consultation a un **contexte**.
-- Les **contextes** sont **personnalisables** (même logique que les types de séances).
+## Conceptos clave
 
-### Note
-Une **note** est un texte rattaché à un élément médical.
+### Patología
+Una **patología** es el objeto central del seguimiento médico.
 
-- Une note est liée **soit** à une **pathologie**, **soit** à une **consultation**.
+- Una patología puede estar vinculada a **varias consultas**.
+- Una patología se describe con un **código ORCHARD 15**.
+
+> **Entrada rápida**  
+> Puedes **introducir directamente el código ORCHARD** para ir más rápido.
+
+### Consulta (con contexto)
+Una **consulta** es un evento médico vinculado a una patología (por ejemplo: revisión, seguimiento, imagen, etc.).
+
+- Cada consulta tiene un **contexto**.
+- Los **contextos** son **personalizables** (misma lógica que los tipos de sesión).
+
+### Nota
+Una **nota** es un texto asociado a un elemento médico.
+
+- Una nota está vinculada **o bien** a una **patología**, **o bien** a una **consulta**.
 
 ---
 
 ## ORCHARD 15 (OSIICS v15)
 
-Dans MyCoach Pro, la description d’une pathologie utilise **ORCHARD 15 / OSIICS v15**.
+En MyCoach Pro, la descripción de una patología utiliza **ORCHARD 15 / OSIICS v15**.
 
-- Lien de référence (redirect recommandé dans la doc) :  
+- Enlace de referencia (redirigir recomendado en la documentación):  
   https://www.johnorchard.com/osiics-downloads.html
-- Publication OSIICS v15 (référence) :  
+- Publicación OSIICS v15 (referencia):  
   https://pubmed.ncbi.nlm.nih.gov/38494156/
 
 ---
 
-## Droits d’accès (ACL)
+## Permisos de acceso (ACL)
 
-### Niveaux disponibles
-- **medical** : accès complet.
-- **paramedical** : accès limité (selon la configuration de votre organisation).
-- **medical_restricted** : accès “terrain” (coach / préparateur, etc.).
+### Niveles disponibles
+- **medical**: acceso completo.
+- **paramedical**: acceso limitado (según la configuración de la organización).
+- **medical_restricted**: acceso “de campo” (coach / preparador, etc.).
 
-### Hiérarchie (important)
+### Jerarquía (importante)
 **medical > paramedical > medical_restricted**
 
-- Un utilisateur **medical** voit tout ce que voient **paramedical** et **medical_restricted**.
-- Un utilisateur **paramedical** voit tout ce que voit **medical_restricted**.
+- Un usuario **medical** ve todo lo que ven **paramedical** y **medical_restricted**.
+- Un usuario **paramedical** ve todo lo que ve **medical_restricted**.
 
-### Particularité de medical_restricted
-Les utilisateurs **medical_restricted** ne voient **que** les éléments médicaux :
-- **partagés directement** avec eux, ou
-- accessibles via un **niveau de partage** prévu par votre organisation.
+### Particularidad de medical_restricted
+Los usuarios **medical_restricted** solo ven los elementos médicos:
+- **compartidos directamente** con ellos, o
+- accesibles mediante un **nivel de compartición** previsto por la organización.
 
-> En clair : **pas d’accès par défaut** à tout le médical. Uniquement ce qui est **partagé**.
-
----
-
-## Notes : création, visibilité et propriété
-
-### Qui peut créer une note ?
-
-**Note liée à une consultation**
-- Seul **le médecin (praticien) qui a créé la consultation** peut créer la note.
-
-**Note liée à une pathologie**
-- Toute personne ayant **accès à la pathologie** (y compris via un **partage**) peut créer la note.
-
-### Tous les médecins ou seulement ceux de l’équipe ?
-Le périmètre des médecins concernés est **déduit de l’élément lié** (pathologie ou consultation).  
-➡️ Ce n’est pas “tous les médecins”, mais ceux concernés par **le contexte / le périmètre** de cet élément.
-
-### Que se passe-t-il si la visibilité change ?
-- Le **praticien reste propriétaire** de la note.
-- Tous les autres accès obtenus par **partage** sont **retirés** (les partages sont réinitialisés).
-- Point à confirmer : selon la configuration, la note peut rester **visible ou non** au praticien après changement de visibilité.
-
-### Que se passe-t-il si le praticien change ?
-- Changer de praticien entraîne un **changement de propriétaire**.
-- L’application affiche un **avertissement très visible** : **bannière d’alerte rouge** avant/pendant l’action.
+> En resumen: **no hay acceso por defecto** a todo lo médico. Solo a lo que esté **compartido**.
 
 ---
 
-## Synchronisation ASKAMON (L1/L2 France)
+## Notas: creación, visibilidad y propiedad
 
-- Si une pathologie n’est **pas complétée**, elle **n’est pas synchronisée** vers ASKAMON.
+### ¿Quién puede crear una nota?
+
+**Nota vinculada a una consulta**
+- Solo **el médico (profesional) que creó la consulta** puede crear la nota.
+
+**Nota vinculada a una patología**
+- Cualquier persona con **acceso a la patología** (incluido por **compartición**) puede crear la nota.
+
+### ¿Todos los médicos o solo los del equipo?
+El perímetro de médicos afectados se deduce del **elemento vinculado** (patología o consulta).  
+➡️ No son “todos los médicos”, sino los que están implicados en **el contexto / alcance** de ese elemento.
+
+### ¿Qué pasa si cambia la visibilidad?
+- El **profesional sigue siendo el propietario** de la nota.
+- Los demás accesos obtenidos por **compartición** se **retiran** (los compartidos se reinician).
+- Punto a confirmar: según la configuración, la nota puede seguir siendo **visible o no** para el profesional después del cambio de visibilidad.
+
+### ¿Qué pasa si cambia el profesional?
+- Cambiar de profesional provoca un **cambio de propietario**.
+- La aplicación muestra una **advertencia muy visible**: **banda de alerta roja** antes o durante la acción.
 
 ---
 
-## Parcours recommandé
+## Sincronización ASKAMON (L1/L2 Francia)
 
-1. **Créer une pathologie**
-   - Sélectionner (ou saisir) un **code ORCHARD 15**
-   - Enregistrer
+- Si una patología no está **completada**, **no se sincroniza** con ASKAMON.
 
-2. **Ajouter une consultation**
-   - Créer une consultation rattachée à la pathologie
-   - Choisir un **contexte** (personnalisable)
+---
 
-3. **Rédiger une note**
-   - Depuis la pathologie **ou** la consultation
-   - Respecter les règles de création
+## Flujo recomendado
 
-4. **Partager si besoin**
-   - Partager aux profils **medical_restricted** si nécessaire
+1. **Crear una patología**
+   - Seleccionar (o introducir) un **código ORCHARD 15**.
+   - Guardar.
+
+2. **Añadir una consulta**
+   - Crear una consulta vinculada a la patología.
+   - Elegir un **contexto** (personalizable).
+
+3. **Redactar una nota**
+   - Desde la patología **o** desde la consulta.
+   - Respetar las reglas de creación.
+
+4. **Compartir si hace falta**
+   - Compartir con perfiles **medical_restricted** si es necesario.

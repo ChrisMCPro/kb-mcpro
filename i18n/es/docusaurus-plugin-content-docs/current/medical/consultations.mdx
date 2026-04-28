@@ -1,53 +1,52 @@
 ---
-title: "Consultations"
-description: "Planifier un acte de soin, contrôler la confidentialité, relier au suivi."
+title: "Consultas"
+description: "Planificar un acto de cuidado, controlar la confidencialidad y vincularlo al seguimiento."
 ---
 
+# Consultas
 
-# Consultations
+Una **consulta** es un acto de cuidado o de seguimiento **planificado**.  
+Implica:
 
-Une **consultation** est un acte de soin ou de suivi **planifié**.  
-Elle implique :
-- un **praticien** (personne en charge)
-- un **patient** (le joueur)
-- un lien possible avec une **pathologie** (blessure/maladie)
+- un **profesional** (persona a cargo).
+- un **paciente** (el jugador).
+- un posible vínculo con una **patología** (lesión / enfermedad).
 
-## Créer une consultation
+## Crear una consulta
 
+### 1) Seleccionar al jugador (paciente)
+La cita queda asociada al jugador correspondiente.
 
-### 1) Sélectionner le joueur (patient)
-Le rendez-vous est rattaché au joueur concerné.
+### 2) Designar al profesional
+Seleccionas a la persona que realiza el acto.
 
-### 2) Désigner le praticien
-Vous sélectionnez la personne qui réalise l’acte.
+### 3) Elegir un tipo de consulta
+Los tipos son configurables según la organización.
 
-### 3) Choisir un type de consultation
-Les types sont configurables selon votre organisation.
+### 4) Definir la confidencialidad
+Eliges quién puede ver el detalle de la consulta (ver más abajo).
 
-### 4) Définir la confidentialité
-Vous choisissez qui peut voir le détail de la consultation (voir ci-dessous).
+### 5) (Opcional) Vincular una patología
+Recomendado para mantener un historial claro entre el incidente de salud y los actos realizados.
 
-### 5) (Optionnel) Relier à une pathologie
-Recommandé pour garder un historique clair entre l’incident de santé et les actes réalisés.
+## Confidencialidad: niveles de visibilidad
 
+La consulta puede ser visible para:
 
-## Confidentialité : niveaux de visibilité
+1. **Solo médicos**.
+2. **Médicos + paramédicos**.
+3. **Médicos + paramédicos + acceso restringido (staff deportivo)**.
+4. **Privado** (creador + profesional).
+5. **Específico** (lista nominativa).
 
-La consultation peut être visible :
-1. **Médecins uniquement**
-2. **Médecins + paramédicaux**
-3. **Médecins + paramédicaux + accès restreint (encadrement sportif)**
-4. **Privé** (créateur + praticien)
-5. **Spécifique** (liste nominative)
+### Regla de ocultación ("Ocupado")
 
-### Règle de masquage (“Occupé”)
+Si un usuario no tiene permisos, solo ve un bloque **OCUPADO**, sin ningún detalle.
 
+## Vincular una consulta a una patología
 
-Si un utilisateur n’a pas les droits, il voit uniquement un créneau “OCCUPÉ”, sans aucun détail.
+Hay 3 casos posibles:
 
-
-## Lier une consultation à une pathologie (3 cas)
-
-- **Lier une pathologie existante** : sélection parmi les pathologies ouvertes (ou récentes) du joueur
-- **Créer la pathologie depuis la consultation** : création immédiate, puis lien automatique
-- **Lier a posteriori** : lien possible même après la consultation
+- **Vincular una patología existente**: selección entre las patologías abiertas o recientes del jugador.
+- **Crear la patología desde la consulta**: creación inmediata y vínculo automático.
+- **Vincular después**: el enlace también puede hacerse una vez creada la consulta.

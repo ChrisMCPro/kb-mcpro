@@ -131,7 +131,7 @@ const sidebars = {
     // 10. Statistiques (Performance)
     {
       type: 'category',
-      label: 'Statistiques',
+      label: 'Performance',
       link: { type: 'generated-index' },
       items: [
         'Performance/Suivi athlétique/add-value',
