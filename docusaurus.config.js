@@ -10,6 +10,7 @@ const config = {
   url: 'https://your-docusaurus-site.example.com',
   baseUrl: '/',
 
+
   organizationName: 'facebook',
   projectName: 'docusaurus',
 
@@ -31,6 +32,18 @@ const config = {
       },
     },
   },
+
+
+ plugins: [
+    [
+      require.resolve('@cmfcmf/docusaurus-search-local'),
+      {
+        language: ['fr', 'en', 'es'],
+        indexBlog: false,
+      },
+    ],
+  ],
+
 
   presets: [
     [
@@ -74,22 +87,31 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
+        hideOnScroll: false, // navbar disparaît en scrollant
+         style: 'dark',      // navbar toujours sombre
         title: 'MYCOACH PRO - Guide Utilisateurs',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo-red-glass.ico',
+          
         },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutoriels',
-          },
-          {
-            type: 'localeDropdown',
-            position: 'right',
-          },
+     
+
+          items: [
+    {
+      type: 'docSidebar',
+      sidebarId: 'tutorialSidebar',
+      position: 'left',
+      label: 'Tutoriels',
+    },
+    {
+      type: 'search',      // 👈 search entre les deux
+      position: 'right',
+    },
+    {
+      type: 'localeDropdown',
+      position: 'right',
+    },
         ],
       },
       footer: {

@@ -4,27 +4,390 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+/* =============================
+   VARIABLES GLOBALES
+   ============================= */
 :root {
-  --ifm-color-primary: #2a1871;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #e63946;
+  --ifm-color-primary-dark: #c1121f;
+  --ifm-color-primary-darker: #a4001a;
+  --ifm-color-primary-darkest: #800016;
+  --ifm-color-primary-light: #f07b83;
+  --ifm-color-primary-lighter: #f4a0a6;
+  --ifm-color-primary-lightest: #f9c5c8;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-size-base: 16px;
+  --ifm-sidebar-width: 280px;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* =============================
+   DARK THEME - Variables
+   ============================= */
 [data-theme='dark'] {
   --ifm-color-primary: #f44336;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary-dark: #d32f2f;
+  --ifm-color-primary-darker: #c62828;
+  --ifm-color-primary-darkest: #b71c1c;
+  --ifm-color-primary-light: #ef5350;
+  --ifm-color-primary-lighter: #e57373;
+  --ifm-color-primary-lightest: #ef9a9a;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* =============================
+   LIGHT - Navbar
+   ============================= */
+[data-theme='light'] .navbar {
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='light'] .navbar__title {
+  color: #232153;
+}
+
+[data-theme='light'] .navbar__link {
+  color: #232153;
+}
+
+[data-theme='light'] .navbar__link:hover {
+  color: #e63946;
+}
+
+[data-theme='light'] .navbar__link--active {
+  color: #232153;
+  font-weight: 600;
+}
+
+[data-theme='light'] .navbar__item {
+  color: #232153;
+}
+
+/* =============================
+   LIGHT - Search bar
+   ============================= */
+[data-theme='light'] .navbar__search-input {
+  background-color: #f5f5f5;
+  color: #0d1b2a;
+  border: 1.5px solid #dde1e7;
+  border-radius: 50px;
+  padding: 6px 16px 6px 36px;
+  font-size: 0.875rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, width 0.2s ease;
+  width: 180px;
+}
+
+[data-theme='light'] .navbar__search-input:focus {
+  border-color: #232153;
+  box-shadow: 0 0 0 3px rgba(35, 33, 83, 0.12);
+  outline: none;
+  width: 220px;
+}
+
+[data-theme='light'] .navbar__search-input::placeholder {
+  color: #9a9a9a;
+}
+
+[data-theme='light'] .navbar__search .search-bar-icon,
+[data-theme='light'] .navbar__search svg {
+  color: #9a9a9a;
+  fill: #9a9a9a;
+}
+
+/* =============================
+   LIGHT - Sidebar
+   ============================= */
+[data-theme='light'] .theme-doc-sidebar-container {
+  background-color: #232153;
+  border-right: none;
+}
+
+[data-theme='light'] .menu {
+  background-color: #232153;
+}
+
+[data-theme='light'] .menu__link {
+  color: #ffffff;
+}
+
+[data-theme='light'] .menu__link:hover {
+  background-color: #1a1752;
+  color: #ffffff;
+}
+
+[data-theme='light'] .menu__link--active {
+  background-color: #e63946;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+[data-theme='light'] .menu__link--active:hover {
+  background-color: #c1121f;
+}
+
+[data-theme='light'] .menu__list-item-collapsible:hover {
+  background-color: #1a1752;
+}
+
+[data-theme='light'] .menu__list-item-collapsible .menu__link {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Flèches blanches */
+[data-theme='light'] .menu__link--sublist-caret::after {
+  filter: invert(1) brightness(2);
+  opacity: 1;
+}
+
+[data-theme='light'] .menu__caret::before {
+  filter: invert(1) brightness(2);
+  opacity: 1;
+}
+
+[data-theme='light'] .menu__caret button {
+  color: #ffffff;
+}
+
+/* =============================
+   DARK - Navbar
+   ============================= */
+[data-theme='dark'] .navbar {
+  background-color: #1b1b1d;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme='dark'] .navbar__title,
+[data-theme='dark'] .navbar__link,
+[data-theme='dark'] .navbar__item {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .navbar__link:hover {
+  color: #e63946;
+}
+
+[data-theme='dark'] .navbar__link--active {
+  color: #e63946;
+  font-weight: 600;
+}
+
+/* =============================
+   SEARCH BAR - Commun aux deux thèmes
+   ============================= */
+
+/* Bouton dans la navbar */
+.aa-DetachedSearchButton {
+  border-radius: 50px !important;
+  overflow: hidden !important;
+}
+
+/* Formulaire ouvert */
+.aa-Form {
+  border-radius: 50px !important;
+  overflow: hidden !important;
+}
+
+/* Wrappers internes - pas de border-radius individuel */
+.aa-InputWrapperPrefix,
+.aa-InputWrapper,
+.aa-InputWrapperSuffix {
+  border-radius: 0 !important;
+}
+
+/* =============================
+   LIGHT - Search bar
+   ============================= */
+[data-theme='light'] .aa-DetachedSearchButton {
+  background-color: #f5f5f5 !important;
+  border: 1.5px solid #dde1e7 !important;
+  color: #232153 !important;
+}
+
+[data-theme='light'] .aa-DetachedSearchButton:hover {
+  border-color: #232153 !important;
+}
+
+[data-theme='light'] .aa-DetachedSearchButtonPlaceholder {
+  color: #9a9a9a !important;
+}
+
+[data-theme='light'] .aa-DetachedSearchButtonIcon {
+  color: #232153 !important;
+}
+
+[data-theme='light'] .aa-Form {
+  background-color: #f5f5f5 !important;
+  border: 1.5px solid #dde1e7 !important;
+  box-shadow: none !important;
+}
+
+[data-theme='light'] .aa-Form:focus-within {
+  border-color: #232153 !important;
+  box-shadow: 0 0 0 3px rgba(35, 33, 83, 0.12) !important;
+}
+
+[data-theme='light'] .aa-Input {
+  background-color: #f5f5f5 !important;
+  color: #0d1b2a !important;
+  border: none !important;
+}
+
+[data-theme='light'] .aa-Input::placeholder {
+  color: #9a9a9a !important;
+  opacity: 1 !important;
+}
+
+[data-theme='light'] .aa-InputWrapperPrefix,
+[data-theme='light'] .aa-InputWrapper,
+[data-theme='light'] .aa-InputWrapperSuffix {
+  background-color: #f5f5f5 !important;
+}
+
+[data-theme='light'] .aa-SubmitButton,
+[data-theme='light'] .aa-SubmitIcon {
+  color: #232153 !important;
+}
+
+[data-theme='light'] .aa-ClearButton {
+  color: #9a9a9a !important;
+}
+
+/* =============================
+   DARK - Search bar
+   ============================= */
+[data-theme='dark'] .aa-DetachedSearchButton {
+  background-color: #2a2a2e !important;
+  border: 1.5px solid #e63946 !important;
+  color: #e63946 !important;
+}
+
+[data-theme='dark'] .aa-DetachedSearchButtonPlaceholder {
+  color: #e63946 !important;
+  opacity: 0.7 !important;
+}
+
+[data-theme='dark'] .aa-DetachedSearchButtonIcon {
+  color: #e63946 !important;
+}
+
+[data-theme='dark'] .aa-Form {
+  background-color: #2a2a2e !important;
+  border: 1.5px solid #e63946 !important;
+  box-shadow: none !important;
+}
+
+[data-theme='dark'] .aa-Form:focus-within {
+  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.25) !important;
+}
+
+[data-theme='dark'] .aa-Input {
+  background-color: #2a2a2e !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+[data-theme='dark'] .aa-Input::placeholder {
+  color: #e63946 !important;
+  opacity: 0.7 !important;
+}
+
+[data-theme='dark'] .aa-InputWrapperPrefix,
+[data-theme='dark'] .aa-InputWrapper,
+[data-theme='dark'] .aa-InputWrapperSuffix {
+  background-color: #2a2a2e !important;
+}
+
+[data-theme='dark'] .aa-SubmitButton,
+[data-theme='dark'] .aa-SubmitIcon {
+  color: #e63946 !important;
+}
+
+[data-theme='dark'] .aa-ClearButton {
+  color: #e63946 !important;
+}
+
+[data-theme='dark'] .aa-DetachedCancelButton {
+  color: #e63946 !important;
+}
+
+[data-theme='dark'] .aa-DetachedContainer {
+  background-color: #1b1b1d !important;
+  border: 1px solid #e63946 !important;
+}
+
+
+/* =============================
+   DARK - Sidebar
+   ============================= */
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background-color: #1b1b1d;
+  border-right: 1px solid #2a2a2e;
+}
+
+[data-theme='dark'] .menu {
+  background-color: #1b1b1d;
+}
+
+[data-theme='dark'] .menu__link {
+  color: #e0e0e0;
+}
+
+[data-theme='dark'] .menu__link:hover {
+  background-color: #2a2a2e;
+  color: #ffffff;
+}
+
+[data-theme='dark'] .menu__link--active {
+  background-color: #e63946;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+[data-theme='dark'] .menu__link--active:hover {
+  background-color: #c1121f;
+}
+
+[data-theme='dark'] .menu__list-item-collapsible:hover {
+  background-color: #2a2a2e;
+}
+
+[data-theme='dark'] .menu__list-item-collapsible .menu__link {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Flèches blanches */
+[data-theme='dark'] .menu__link--sublist-caret::after,
+[data-theme='dark'] .menu__caret::before {
+  filter: invert(1) brightness(2);
+  opacity: 1;
+}
+
+/* =============================
+   LIGHT - Bouton toggle theme
+   ============================= */
+[data-theme='light'] .toggleButton_gllP {
+  color: #232153 !important;
+}
+
+[data-theme='light'] .toggleButton_gllP:hover {
+  background-color: rgba(35, 33, 83, 0.08) !important;
+}
+
+[data-theme='light'] .toggleButton_gllP svg {
+  fill: #232153 !important;
+  color: #232153 !important;
+}
+
+/* Fallback si le hash change au prochain build */
+[data-theme='light'] [class*='toggleButton'] {
+  color: #232153 !important;
+}
+
+[data-theme='light'] [class*='toggleButton'] svg {
+  fill: #232153 !important;
+  color: #232153 !important;
 }
