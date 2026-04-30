@@ -112,6 +112,20 @@ const config = {
       type: 'localeDropdown',
       position: 'right',
     },
+    {
+      href: 'https://mycoach.pro',
+      label: 'Site web',
+      position: 'right',
+      className: 'navbar-btn-website',
+    },
+
+    // Bouton connexion
+    {
+      href: 'https://app.mycoachpro.io',
+      label: 'Se connecter',
+      position: 'right',
+      className: 'navbar-btn-login',
+    },
         ],
       },
       footer: {
