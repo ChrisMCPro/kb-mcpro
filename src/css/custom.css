@@ -391,3 +391,145 @@
   fill: #232153 !important;
   color: #232153 !important;
 }
+
+/* =============================
+   SIDEBAR ICONS - Base commune
+   ============================= */
+.sidebar-icon-home .menu__link--sublist::before,
+.sidebar-icon-calendar .menu__link--sublist::before,
+.sidebar-icon-players .menu__link--sublist::before,
+.sidebar-icon-sessions .menu__link--sublist::before,
+.sidebar-icon-exercises .menu__link--sublist::before,
+.sidebar-icon-game-football .menu__link--sublist::before,
+.sidebar-icon-insights .menu__link--sublist::before,
+.sidebar-icon-medical .menu__link--sublist::before,
+.sidebar-icon-performance .menu__link--sublist::before,
+.sidebar-icon-mediacenter .menu__link--sublist::before,
+.sidebar-icon-club .menu__link--sublist::before,
+.sidebar-icon-settings .menu__link--sublist::before,
+.sidebar-icon-scouting .menu__link--sublist::before,
+.sidebar-icon-forms .menu__link--sublist::before,
+.sidebar-icon-report-bi .menu__link--sublist::before,
+.sidebar-icon-reports .menu__link--sublist::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  vertical-align: middle;
+  flex-shrink: 0;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+/* Couleur light theme (sidebar bleu foncé → icônes blanches) */
+[data-theme='light'] .sidebar-icon-home .menu__link--sublist::before,
+[data-theme='light'] .sidebar-icon-calendar .menu__link--sublist::before,
+[data-theme='light'] .sidebar-icon-players .menu__link--sublist::before,
+[data-theme='light'] .sidebar-icon-sessions .menu__link--sublist::before,
+[data-theme='light'] .sidebar-icon-exercises .menu__link--sublist::before,
+[data-theme='light'] .sidebar-icon-game-football .menu__link--sublist::before,
+[data-theme='light'] .sidebar-icon-insights .menu__link--sublist::before,
+[data-theme='light'] .sidebar-icon-medical .menu__link--sublist::before,
+[data-theme='light'] .sidebar-icon-performance .menu__link--sublist::before,
+[data-theme='light'] .sidebar-icon-mediacenter .menu__link--sublist::before,
+[data-theme='light'] .sidebar-icon-club .menu__link--sublist::before,
+[data-theme='light'] .sidebar-icon-settings .menu__link--sublist::before,
+[data-theme='light'] .sidebar-icon-scouting .menu__link--sublist::before,
+[data-theme='light'] .sidebar-icon-forms .menu__link--sublist::before,
+[data-theme='light'] .sidebar-icon-report-bi .menu__link--sublist::before,
+[data-theme='light'] .sidebar-icon-reports .menu__link--sublist::before {
+  background-color: #ffffff;
+}
+
+/* Couleur dark theme (sidebar sombre → icônes rouge accent) */
+[data-theme='dark'] .sidebar-icon-home .menu__link--sublist::before,
+[data-theme='dark'] .sidebar-icon-calendar .menu__link--sublist::before,
+[data-theme='dark'] .sidebar-icon-players .menu__link--sublist::before,
+[data-theme='dark'] .sidebar-icon-sessions .menu__link--sublist::before,
+[data-theme='dark'] .sidebar-icon-exercises .menu__link--sublist::before,
+[data-theme='dark'] .sidebar-icon-game-football .menu__link--sublist::before,
+[data-theme='dark'] .sidebar-icon-insights .menu__link--sublist::before,
+[data-theme='dark'] .sidebar-icon-medical .menu__link--sublist::before,
+[data-theme='dark'] .sidebar-icon-performance .menu__link--sublist::before,
+[data-theme='dark'] .sidebar-icon-mediacenter .menu__link--sublist::before,
+[data-theme='dark'] .sidebar-icon-club .menu__link--sublist::before,
+[data-theme='dark'] .sidebar-icon-settings .menu__link--sublist::before,
+[data-theme='dark'] .sidebar-icon-scouting .menu__link--sublist::before,
+[data-theme='dark'] .sidebar-icon-forms .menu__link--sublist::before,
+[data-theme='dark'] .sidebar-icon-report-bi .menu__link--sublist::before,
+[data-theme='dark'] .sidebar-icon-reports .menu__link--sublist::before {
+  background-color: #e63946;
+}
+
+/* =============================
+   SIDEBAR ICONS - Masques SVG
+   ============================= */
+.sidebar-icon-home .menu__link--sublist::before {
+  mask-image: url('/img/icons/home.svg');
+  -webkit-mask-image: url('/img/icons/home.svg');
+}
+.sidebar-icon-calendar .menu__link--sublist::before {
+  mask-image: url('/img/icons/calendar.svg');
+  -webkit-mask-image: url('/img/icons/calendar.svg');
+}
+.sidebar-icon-players .menu__link--sublist::before {
+  mask-image: url('/img/icons/players.svg');
+  -webkit-mask-image: url('/img/icons/players.svg');
+}
+.sidebar-icon-sessions .menu__link--sublist::before {
+  mask-image: url('/img/icons/sessions.svg');
+  -webkit-mask-image: url('/img/icons/sessions.svg');
+}
+.sidebar-icon-exercises .menu__link--sublist::before {
+  mask-image: url('/img/icons/exercises.svg');
+  -webkit-mask-image: url('/img/icons/exercises.svg');
+}
+.sidebar-icon-game-football .menu__link--sublist::before {
+  mask-image: url('/img/icons/game-football.svg');
+  -webkit-mask-image: url('/img/icons/game-football.svg');
+}
+.sidebar-icon-insights .menu__link--sublist::before {
+  mask-image: url('/img/icons/insights.svg');
+  -webkit-mask-image: url('/img/icons/insights.svg');
+}
+.sidebar-icon-medical .menu__link--sublist::before {
+  mask-image: url('/img/icons/medical.svg');
+  -webkit-mask-image: url('/img/icons/medical.svg');
+}
+.sidebar-icon-performance .menu__link--sublist::before {
+  mask-image: url('/img/icons/performance.svg');
+  -webkit-mask-image: url('/img/icons/performance.svg');
+}
+.sidebar-icon-mediacenter .menu__link--sublist::before {
+  mask-image: url('/img/icons/mediacenter.svg');
+  -webkit-mask-image: url('/img/icons/mediacenter.svg');
+}
+.sidebar-icon-club .menu__link--sublist::before {
+  mask-image: url('/img/icons/club.svg');
+  -webkit-mask-image: url('/img/icons/club.svg');
+}
+.sidebar-icon-settings .menu__link--sublist::before {
+  mask-image: url('/img/icons/settings.svg');
+  -webkit-mask-image: url('/img/icons/settings.svg');
+}
+.sidebar-icon-scouting .menu__link--sublist::before {
+  mask-image: url('/img/icons/scouting.svg');
+  -webkit-mask-image: url('/img/icons/scouting.svg');
+}
+.sidebar-icon-forms .menu__link--sublist::before {
+  mask-image: url('/img/icons/forms.svg');
+  -webkit-mask-image: url('/img/icons/forms.svg');
+}
+.sidebar-icon-report-bi .menu__link--sublist::before {
+  mask-image: url('/img/icons/report-bi.svg');
+  -webkit-mask-image: url('/img/icons/report-bi.svg');
+}
+.sidebar-icon-reports .menu__link--sublist::before {
+  mask-image: url('/img/icons/reports.svg');
+  -webkit-mask-image: url('/img/icons/reports.svg');
+}

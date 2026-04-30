@@ -9,6 +9,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Accueil',
+      className: 'sidebar-icon-home',
       link: { type: 'generated-index' },
       items: [
         'accueil/config-widget',
@@ -22,6 +23,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Calendrier',
+      className: 'sidebar-icon-calendar',
       link: { type: 'generated-index' },
       items: [
         'calendrier/customise',
@@ -34,6 +36,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Joueurs',
+      className: 'sidebar-icon-players',
       link: { type: 'generated-index' },
       items: [
         'joueurs/add-official-players',
@@ -48,6 +51,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Séances',
+      className: 'sidebar-icon-sessions',
       link: { type: 'generated-index' },
       items: [
         'Séances/import-objective-data',
@@ -59,6 +63,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Exercises',
+      className: 'sidebar-icon-exercises',
       link: { type: 'generated-index' },
       items: ['exercises/create-exercises'],
     },
@@ -67,6 +72,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Matchs',
+      className: 'sidebar-icon-game-football',
       link: { type: 'generated-index' },
       items: ['matchs/import-objective-data'],
     },
@@ -75,6 +81,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Insights',
+      className: 'sidebar-icon-insights',
       link: { type: 'generated-index' },
       items: [
 
@@ -82,6 +89,7 @@ const sidebars = {
         {
           type: 'category',
           label: 'Formulaires',
+          className: 'sidebar-icon-forms',
           items: [
             'Insights/Formulaires/create-from-template',
             'Insights/Formulaires/duplicate-form',
@@ -93,6 +101,7 @@ const sidebars = {
         {
           type: 'category',
           label: 'Rapports',
+          className: 'sidebar-icon-reports',
           items: ['Insights/Rapports/share-report'],
         },
       ],
@@ -102,6 +111,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Medical',
+      className: 'sidebar-icon-medical',
       link: { type: 'generated-index' },
       items: [
         'medical/medical',
@@ -132,6 +142,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Performance',
+      className: 'sidebar-icon-performance',
       link: { type: 'generated-index' },
       items: [
         'Performance/Suivi athlétique/add-value',
@@ -144,6 +155,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Média Center',
+      className: 'sidebar-icon-mediacenter',
       link: { type: 'generated-index' },
       items: ['Média Center/feed-view-mediacenter'],
     },
@@ -152,6 +164,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Club',
+      className: 'sidebar-icon-club',
       link: { type: 'generated-index' },
       items: [
         'club/add-user',
@@ -163,6 +176,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Paramètres',
+      className: 'sidebar-icon-settings',
       link: { type: 'generated-index' },
       items: ['Paranètres/season-change'],
     },
@@ -171,6 +185,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Scouting',
+      className: 'sidebar-icon-scouting',
       link: { type: 'generated-index' },
       items: [
         'scouting/mobile/exemple-mobile',
