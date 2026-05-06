@@ -93,40 +93,50 @@ const config = {
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo-red-glass.ico',
+          width: 32,
+          height: 32,
           
         },
      
 
           items: [
-    {
-      type: 'docSidebar',
-      sidebarId: 'tutorialSidebar',
-      position: 'left',
-      label: 'Tutoriels',
-    },
-    {
-      type: 'search',      // 👈 search entre les deux
-      position: 'right',
-    },
-    {
-      type: 'localeDropdown',
-      position: 'right',
-    },
-    {
-      href: 'https://mycoach.pro',
-      label: 'Site web',
-      position: 'right',
-      className: 'navbar-btn-website',
-    },
-
-    // Bouton connexion
-    {
-      href: 'https://app.mycoachpro.io',
-      label: 'Se connecter',
-      position: 'right',
-      className: 'navbar-btn-login',
-    },
-        ],
+  {
+    type: 'docSidebar',
+    sidebarId: 'tutorialSidebar',
+    position: 'left',
+    label: 'Tutoriels',
+  },
+  {
+    type: 'search',
+    position: 'right',
+  },
+  {
+    type: 'localeDropdown',
+    position: 'right',
+  },
+  // Boutons TEXTE — desktop uniquement (cachés en mobile via CSS)
+  {
+    type: 'html',
+    position: 'right',
+    value: '<a href="https://app.mycoachpro.io" class="navbar__link navbar-btn-login">Se connecter</a>',
+  },
+  {
+    type: 'html',
+    position: 'right',
+    value: '<a href="https://www.mycoach.pro" class="navbar__link navbar-btn-website">Site web</a>',
+  },
+  // Icônes SVG — mobile uniquement (cachées en desktop via CSS)
+  {
+    type: 'html',
+    position: 'right',
+    value: '<a href="https://app.mycoachpro.io" class="navbar-icon-btn navbar-icon-login"><img src="/img/icons/login.svg" /></a>',
+  },
+  {
+    type: 'html',
+    position: 'right',
+    value: '<a href="https://www.mycoach.pro" class="navbar-icon-btn navbar-icon-website"><img src="/img/icons/website.svg" /></a>',
+  },
+],
       },
       footer: {
         style: 'dark',

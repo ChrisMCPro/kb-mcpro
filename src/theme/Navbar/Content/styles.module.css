@@ -1,0 +1,18 @@
+/* Forcer l'affichage des icônes droite en mobile */
+:global(.navbar__items--right) {
+  display: flex !important;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Cacher uniquement le toggle couleur en mobile */
+@media (max-width: 996px) {
+  .colorModeToggle {
+    display: none;
+  }
+}
+
+/* Restore Infima style (CSS Cascade Layers) */
+:global(.navbar__items--right) > :last-child {
+  padding-right: 0;
+}

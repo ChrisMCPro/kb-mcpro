@@ -108,7 +108,7 @@ const sidebars = {
     },
 
     // 8. Medical
-    {
+        {
       type: 'category',
       label: 'Medical',
       className: 'sidebar-icon-medical',
@@ -121,6 +121,7 @@ const sidebars = {
         'medical/consultations',
         'medical/medical-notes',
         'medical/epidemiologie',
+        'medical/cycle-contraception',       
         'medical/add-medicine',
         'medical/prescriptions',
       ],
@@ -130,6 +131,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Nutrition',
+      className: 'sidebar-icon-nutrition',
       link: { type: 'generated-index' },
       items: [
         'Nutrition/add-value',
@@ -199,6 +201,7 @@ const sidebars = {
     {
   type: 'category',
   label: 'Application Mobile',
+  className: 'sidebar-icon-mobile-app',
   link: { type: 'generated-index' },
   items: [
 
