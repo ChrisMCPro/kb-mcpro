@@ -337,29 +337,3 @@
    ============================= */
 .navbar__items--right .navbar__item { margin-left: 10px; }
 
-/* =============================
-   MOBILE (max 996px)
-   ============================= */
-@media (max-width: 996px) {
-  .navbar__title { display: none; }
-  .navbar__toggle { display: none !important; }
-  .navbar__brand { position: static; transform: none; }
-
-  .navbar__items--right {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    align-items: center !important;
-  }
-
-  /* Sur mobile : cache texte, affiche icônes */
-  .navbar-btn-website,
-  .navbar-btn-login { display: none !important; }
-  .navbar-icon-btn { display: inline-flex !important; }
-}
-
-@media (max-width: 996px) {
-  .navbar-icon-btn {
-    display: inline-flex !important;
-    background: red !important;
-  }
-}
