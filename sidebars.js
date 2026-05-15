@@ -213,6 +213,7 @@ const sidebars = {
         'app-mobile/joueurs/create-player-session',
         'app-mobile/joueurs/fresh-start',
         'app-mobile/joueurs/health-data',
+        'app-mobile/joueurs/polar-playerdata',
         // ...
       ],
     },

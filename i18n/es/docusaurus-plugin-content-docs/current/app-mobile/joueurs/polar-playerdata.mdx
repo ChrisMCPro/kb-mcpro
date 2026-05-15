@@ -1,0 +1,431 @@
+import appStore from '/img/polar-playerdata/00-prereq-app-store-ios.png';
+import Playstore from '/img/polar-playerdata/00-prereq-google-play-android.png';
+import polar_connect_01_open_integrations from '/img/polar-playerdata/polar-connect-01-open-integrations.png';
+import polar_connect_02_select_polar from '/img/polar-playerdata/polar-connect-02-select-polar.png';
+import polar_connect_03_sign_in from '/img/polar-playerdata/polar-connect-03-sign-in.png';
+import polar_connect_04_cookies from '/img/polar-playerdata/polar-connect-04-cookies.png';
+import polar_connect_05_authorize from '/img/polar-playerdata/polar-connect-05-authorize.png';
+import polar_connect_06_linked from '/img/polar-playerdata/polar-connect-06-linked.png';
+import polar_filter_01_open_filters from '/img/polar-playerdata/polar-filter-01-open-filters.png';
+import polar_filter_02_open_integrations from '/img/polar-playerdata/polar-filter-02-open-integrations.png';
+import polar_filter_03_select_polar from '/img/polar-playerdata/polar-filter-03-select-polar.png';
+import polar_filter_04_validate from '/img/polar-playerdata/polar-filter-04-validate.png';
+import polar_routine_01_sync_watch from '/img/polar-playerdata/polar-routine-01-sync-watch.png';
+import polar_routine_02b_notification from '/img/polar-playerdata/polar-routine-02b-notification.png';
+import polar_routine_02_find_session from '/img/polar-playerdata/polar-routine-02-find-session.png';
+import polar_routine_03_session_detail_kpis from '/img/polar-playerdata/polar-routine-03-session-detail-kpis.png';
+import polar_routine_04_session_detail_hr_map from '/img/polar-playerdata/polar-routine-04-session-detail-hr-map.png';
+import routine_create_player_session from '/img/polar-playerdata/routine-create-player-session.png';
+import playerdata_connect_01_open_integrations from '/img/polar-playerdata/playerdata-connect-01-open-integrations.png';
+import playerdata_connect_02_select_playerdata from '/img/polar-playerdata/playerdata-connect-02-select-playerdata.png';
+import playerdata_connect_03_sign_in from '/img/polar-playerdata/playerdata-connect-03-sign-in.png';
+import playerdata_connect_04_linked from '/img/polar-playerdata/playerdata-connect-04-linked.png';
+import playerdata_routine_01_app_home from '/img/polar-playerdata/playerdata-routine-01-app-home.png';
+import playerdata_routine_02_find_session from '/img/polar-playerdata/playerdata-routine-02-find-session.png';
+import playerdata_routine_03_heart_rate from '/img/polar-playerdata/playerdata-routine-03-heart-rate.png';
+import playerdata_routine_04_gps_metrics from '/img/polar-playerdata/playerdata-routine-04-gps-metrics.png';
+
+# Configuración de Polar y PlayerData para árbitros FIFA.
+
+Dos configuraciones cortas. Una sola vez. Con esta guía conectarás tus dispositivos a MyCoach Pro, filtrarás tus sesiones y sacarás el máximo partido a tus datos de entrenamiento.
+
+---
+
+## Antes de empezar
+
+> ⚠️ **PRIMER PASO OBLIGATORIO — Actualiza tu aplicación MyCoach Pro**
+>
+> Versión **1.134.0** o superior — necesaria para acceder a las integraciones de Polar y PlayerData.
+>
+> **Cómo comprobarlo:** abre App Store (iOS) o Google Play (Android), busca *MyCoach Pro AMS* y toca **Update** si está disponible.
+
+<img src={appStore} alt="App Store iOS" width="315" />
+
+*App Store · iOS*
+
+<img src={Playstore} alt="Google Play Android" width="315" />
+
+*Google Play · Android*
+
+---
+
+# 1 · Polar
+
+**Conecta. Configura. Usa.**
+
+Frecuencia cardíaca, ritmo, mapa del recorrido, zonas FC — todo fluye directamente desde Polar Flow hacia MyCoach Pro.
+
+## El flujo en seis pasos
+
+1. Abrir Integrations
+2. Tocar Polar
+3. Iniciar sesión en Polar
+4. Aceptar las cookies
+5. Autorizar el acceso
+6. Linked ✓
+
+---
+
+## 1.1 · Conectar Polar
+
+### Paso 1 — Abrir Integrations
+
+Desde tu Dashboard, toca el icono de sincronización junto a **Synchronized Sessions**.
+
+<img src={polar_connect_01_open_integrations} alt="Dashboard MyCoach Pro" width="315" />
+
+*Dashboard · MyCoach Pro*
+
+---
+
+### Paso 2 — Seleccionar Polar
+
+Toca **Polar** en tu lista de **Integrations**.
+
+<img src={polar_connect_02_select_polar} alt="Integrations MyCoach Pro" width="315" />
+
+*Integrations · MyCoach Pro*
+
+---
+
+### Paso 3 — Iniciar sesión en Polar
+
+> ⚠️ **IMPORTANTE — Usa tu propia cuenta de Polar Flow**
+>
+> Usa el correo electrónico y la contraseña de **Polar Flow** — no tus credenciales de MyCoach Pro. Toca **Connexion**.
+
+<img src={polar_connect_03_sign_in} alt="Autenticación Polar Flow" width="315" />
+
+*Autenticación Polar Flow*
+
+---
+
+### Paso 4 — Aceptar las cookies
+
+Polar Flow solicita consentimiento de cookies antes de continuar. **Allow selection** es suficiente — solo las cookies necesarias.
+
+<img src={polar_connect_04_cookies} alt="Consentimiento de cookies Polar Flow" width="315" />
+
+*Consentimiento de cookies Polar Flow*
+
+---
+
+### Paso 5 — Autorizar MyCoach Pro
+
+> ⚠️ **IMPORTANTE — Acepta los Terms and Conditions**
+>
+> Marca **I agree to the Terms and Conditions** y luego toca **OK**. Esto autoriza a Polar a compartir tus datos de entrenamiento con MyCoach Pro.
+
+<img src={polar_connect_05_authorize} alt="Pantalla de autorización de Polar" width="315" />
+
+*Pantalla de autorización de Polar*
+
+---
+
+### Paso 6 — Ya está vinculado
+
+Polar aparece ahora como **Linked** en tus **Integrations**. Tus próximas sesiones se sincronizarán automáticamente desde Polar Flow.
+
+<img src={polar_connect_06_linked} alt="Polar vinculado" width="315" />
+
+*Polar = Linked*
+
+---
+
+## 1.2 · Filtrar tus fuentes de datos
+
+Para evitar sesiones duplicadas, configura tu dashboard para mostrar solo las sesiones de Polar.
+
+### Paso 1 — Abrir Filters
+
+Desde tu Dashboard, toca el **icono de engranaje** junto a **Synchronized Sessions** — no el icono de sincronización que está al lado.
+
+<img src={polar_filter_01_open_filters} alt="Dashboard icono de engranaje" width="315" />
+
+*Dashboard · icono de engranaje*
+
+---
+
+### Paso 2 — Abrir el desplegable Integrations
+
+En el panel **Filters**, toca el desplegable **Integrations** para elegir qué fuente mostrar.
+
+<img src={polar_filter_02_open_integrations} alt="Panel Filters" width="315" />
+
+*Panel Filters*
+
+---
+
+### Paso 3 — Seleccionar solo Polar
+
+Selecciona **Polar** — deja **Apple Health** sin marcar para evitar duplicados. Toca **Done**.
+
+<img src={polar_filter_03_select_polar} alt="Desplegable Integrations" width="315" />
+
+*Desplegable Integrations*
+
+---
+
+### Paso 4 — Validar
+
+Toca **Validate**. Tu lista de **Synchronized Sessions** mostrará ahora solo las sesiones de Polar.
+
+<img src={polar_filter_04_validate} alt="Dashboard filtrado" width="315" />
+
+*Dashboard filtrado*
+
+---
+
+> ⚠️ **ATENCIÓN — Lo que verás en tu lista**
+>
+> Solo aparecerán las sesiones subidas a Polar Flow **después** de haber conectado tu cuenta a MyCoach Pro. Limitado a los **últimos 30 días**.
+>
+> Las sesiones más antiguas, o las realizadas antes de la conexión, no se recuperarán.
+
+---
+
+## 1.3 · Tu rutina después de la sesión
+
+Cinco pasos. Un flujo familiar — igual que hoy, pero con datos más ricos.
+
+| # | Paso | Lo que haces |
+|---|---|---|
+| 1 | **Correr** | Realiza tu sesión Polar como de costumbre. |
+| 2 | **Sincronizar** | Sincroniza tu reloj con Polar Flow. |
+| 3 | **Abrir** | Toca la notificación, o encuentra la sesión en MyCoach Pro. |
+| 4 | **Revisar** | Consulta los datos enriquecidos: zonas FC, ritmo y mapa. |
+| 5 | **Crear** | Toca **Create player session**. Hecho. |
+
+---
+
+### Pasos 1 y 2 — Realiza la sesión y luego sincroniza tu reloj
+
+Después de tu sesión, sincroniza tu reloj Polar con Polar Flow como haces siempre. **Aquí no cambia nada.**
+
+<img src={polar_routine_01_sync_watch} alt="Polar Flow sincronizado hace 4 min" width="315" />
+
+*Polar Flow · Sincronizado hace 4 min*
+
+---
+
+### Paso 3 — Abrir tu sesión
+
+Tienes dos maneras de llegar — elige la que mejor se adapte a tu momento.
+
+**⚡ La más rápida: toca la notificación de MyCoach Pro**
+
+En cuanto tu reloj termina la sincronización con Polar Flow, MyCoach Pro detecta la nueva sesión y envía una notificación: *"Your session is ready to be imported. Tap to synchronize it."* Tócala y accederás directamente al detalle de la sesión.
+
+<img src={polar_routine_02b_notification} alt="Notificación de MyCoach Pro sobre Polar Flow" width="315" />
+
+*Notificación de MyCoach Pro sobre Polar Flow*
+
+**O bien: abre MyCoach Pro y encuentra tu sesión**
+
+Si no viste la notificación, no pasa nada. Abre MyCoach Pro — tu sesión Polar aparece en **Synchronized Sessions**, marcada como **Not imported** hasta que la abras.
+
+<img src={polar_routine_02_find_session} alt="Dashboard MyCoach Pro" width="315" />
+
+*Dashboard · MyCoach Pro*
+
+---
+
+### Paso 4 — Ver los datos enriquecidos de la sesión
+
+Distancia total, ritmo, cadencia, velocidad, altitud — mucho más de lo que tenías antes. Estos datos proceden directamente de Polar.
+
+<img src={polar_routine_03_session_detail_kpis} alt="Detalle de sesión KPI principales" width="315" />
+
+*Detalle de sesión · KPI principales*
+
+Desplázate por el detalle de la sesión para ver el desglose completo de zonas FC, la evolución del ritmo y la ruta GPS en el mapa.
+
+<img src={polar_routine_04_session_detail_hr_map} alt="Detalle de sesión zonas FC y mapa" width="315" />
+
+*Detalle de sesión · zonas FC y mapa*
+
+---
+
+### Paso 5 — Crear tu sesión de jugador
+
+Toca **Create player session**, completa el formulario igual que hoy y luego toca **Done**. Aquí no cambia nada.
+
+<img src={routine_create_player_session} alt="Formulario Create player session" width="315" />
+
+*Formulario Create player session*
+
+---
+
+# 2 · PlayerData
+
+**Conecta. Configura. Usa.**
+
+Métricas GPS — distancia, sprints, aceleraciones, además de la frecuencia cardíaca cuando se empareja con una banda torácica. Nuevos datos directamente en MyCoach Pro.
+
+## El flujo en cuatro pasos
+
+1. Abrir Integrations
+2. Tocar Player Data
+3. Iniciar sesión
+4. Linked ✓
+
+---
+
+## 2.1 · Conectar PlayerData
+
+### Paso 1 — Abrir Integrations
+
+Desde tu Dashboard, toca el icono de sincronización junto a **Synchronized Sessions** — el mismo punto de entrada que en Polar.
+
+<img src={playerdata_connect_01_open_integrations} alt="Dashboard MyCoach Pro" width="315" />
+
+*Dashboard · MyCoach Pro*
+
+---
+
+### Paso 2 — Seleccionar Player Data
+
+Toca **Player Data** en tu lista de **Integrations**.
+
+<img src={playerdata_connect_02_select_playerdata} alt="Integrations MyCoach Pro" width="315" />
+
+*Integrations · MyCoach Pro*
+
+---
+
+### Paso 3 — Iniciar sesión en PlayerData
+
+> ⚠️ **IMPORTANTE — Usa tus credenciales de PlayerData**
+>
+> Usa el mismo correo electrónico y la misma contraseña que utilizas en la aplicación **PlayerData**. Toca **Sign in**.
+
+<img src={playerdata_connect_03_sign_in} alt="Autenticación PlayerData" width="315" />
+
+*Autenticación PlayerData*
+
+---
+
+### Paso 4 — Ya está vinculado
+
+**Player Data** aparece ahora como **Linked** en tus **Integrations**.
+
+<img src={playerdata_connect_04_linked} alt="Player Data vinculado" width="315" />
+
+*Player Data = Linked*
+
+---
+
+## 2.2 · Filtrar tus fuentes de datos
+
+Mismo flujo que con Polar — tres toques para mantener solo las sesiones de PlayerData en tu dashboard.
+
+| # | Paso | Lo que haces |
+|---|---|---|
+| 1 | **Abrir Filters** | Toca el icono de engranaje junto a Synchronized Sessions. |
+| 2 | **Abrir Integrations** | Toca el desplegable Integrations en el panel Filters. |
+| 3 | **Seleccionar Player Data** | Elige solo Player Data. Toca **Done** y luego **Validate**. |
+
+---
+
+## 2.3 · Tu rutina después de la sesión
+
+El mismo flujo de cinco pasos que con Polar — con el mismo **Create player session** al final.
+
+| # | Paso | Lo que haces |
+|---|---|---|
+| 1 | **Correr** | Realiza tu sesión con la unidad GPS de PlayerData. |
+| 2 | **Comprobar** | Abre la aplicación PlayerData para confirmar la sincronización. |
+| 3 | **Encontrar** | Abre MyCoach Pro y encuentra tu sesión. |
+| 4 | **Revisar** | FC + nuevas métricas GPS: sprints, aceleraciones y distancia. |
+| 5 | **Crear** | Toca **Create player session**. Hecho. |
+
+---
+
+### Pasos 1 y 2 — Realiza la sesión y luego comprueba que ha subido
+
+Realiza tu sesión con tu unidad GPS PlayerData. Abre la aplicación PlayerData — tu sesión aparece en **Last Session**.
+
+<img src={playerdata_routine_01_app_home} alt="Aplicación PlayerData última sesión" width="315" />
+
+*Aplicación PlayerData · Last Session*
+
+---
+
+### Paso 3 — Encontrar tu sesión en MyCoach Pro
+
+Tu sesión de PlayerData aparece en **Synchronized Sessions** — busca la insignia verde **PlayerData** en la tarjeta de sesión.
+
+<img src={playerdata_routine_02_find_session} alt="Dashboard MyCoach Pro insignia PlayerData" width="315" />
+
+*Dashboard MyCoach Pro · insignia PlayerData*
+
+---
+
+### Paso 4 — Ver tus datos de frecuencia cardíaca
+
+> ⚠️ **IMPORTANTE — La frecuencia cardíaca con PlayerData tiene una limitación conocida**
+>
+> Cuando se empareja con una banda torácica, PlayerData registra la FC junto con el GPS — pero esta conexión es actualmente poco fiable en iPhone debido a un problema conocido de Bluetooth. Los datos de FC pueden ser parciales o no aparecer en algunas sesiones.
+>
+> → Si llevas tu **reloj Polar + banda FC** en paralelo durante la misma sesión, todos tus datos de FC seguirán llegando a través de tu **integración Polar**.
+
+<img src={playerdata_routine_03_heart_rate} alt="Detalle de sesión frecuencia cardíaca" width="315" />
+
+*Detalle de sesión · frecuencia cardíaca*
+
+---
+
+### Paso 5 — Descubrir las nuevas métricas GPS
+
+Eventos de aceleración, desaceleraciones, velocidad máxima, distancia de sprint, carreras de alta intensidad, metros por minuto, zonas de frecuencia cardíaca, distancia total — **todo esto es nuevo con PlayerData**.
+
+<img src={playerdata_routine_04_gps_metrics} alt="Detalle de sesión métricas GPS" width="315" />
+
+*Detalle de sesión · métricas GPS*
+
+---
+
+### Paso 6 — Crear tu sesión de jugador
+
+Mismo formulario, mismo flujo de siempre. Toca **Create player session**, completa el formulario y luego toca **Done**.
+
+<img src={routine_create_player_session} alt="Formulario Create player session reutilizado" width="315" />
+
+*Formulario Create player session (reutilizado)*
+
+---
+
+# ¿Necesitas ayuda?
+
+**Para problemas de la app y de conexión**
+→ Email: **support@mycoachpro.io**
+Inicio de sesión, errores de sincronización, sesiones ausentes, cierres inesperados de la app.
+
+**Para dashboards y seguimiento de entrenamiento**
+→ **Lorenzo y preparadores físicos**
+Informes, dashboards y feedback de entrenamiento.
+
+---
+
+## Cómo insertar las imágenes en Coda
+
+Coda no importa automáticamente las imágenes desde este markdown. Debes añadirlas manualmente después de la importación.
+
+**Flujo rápido:**
+
+1. **Importa este markdown** en una nueva página de Coda (Insert → Import → Paste markdown, o arrastra el archivo `.md`)
+2. **Descomprime** `coda_screenshots.zip` en alguna carpeta de tu ordenador
+3. **Para cada imagen ya incluida en este MDX**, no hace falta ninguna acción adicional si utilizas este archivo en Docusaurus
+4. **Si sigues usando una versión markdown para Coda**, arrastra manualmente cada captura al lugar correcto en la página
+5. **Consejo:** los nombres de archivo están ordenados según el orden de lectura — fácil de seguir de arriba abajo
+
+**Índice de archivos de imagen (26 archivos):**
+
+| Sección | Nombre de archivo |
+|---|---|
+| Antes de empezar | `00-prereq-app-store-ios.png` · `00-prereq-google-play-android.png` |
+| Polar · Conexión | `polar-connect-01-open-integrations.png` → `polar-connect-06-linked.png` (6 archivos) |
+| Polar · Filtros | `polar-filter-01-open-filters.png` → `polar-filter-04-validate.png` (4 archivos) |
+| Polar · Rutina | `polar-routine-01-sync-watch.png` · `polar-routine-02b-notification.png` · `polar-routine-02-find-session.png` · `polar-routine-03-session-detail-kpis.png` · `polar-routine-04-session-detail-hr-map.png` + `routine-create-player-session.png` |
+| PlayerData · Conexión | `playerdata-connect-01-open-integrations.png` → `playerdata-connect-04-linked.png` (4 archivos) |
+| PlayerData · Rutina | `playerdata-routine-01-app-home.png` → `playerdata-routine-04-gps-metrics.png` (4 archivos) + reutilización de `routine-create-player-session.png` |

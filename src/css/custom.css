@@ -183,8 +183,8 @@
 .sidebar-icon-reports .menu__link--sublist::before {
   content: '';
   display: inline-block;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   margin-right: 10px;
   vertical-align: middle;
   flex-shrink: 0;
@@ -213,7 +213,7 @@
 [data-theme='light'] .sidebar-icon-report-bi .menu__link--sublist::before,
 [data-theme='light'] .sidebar-icon-mobile-app .menu__link--sublist::before,
 [data-theme='light'] .sidebar-icon-nutrition .menu__link--sublist::before,
-[data-theme='light'] .sidebar-icon-reports .menu__link--sublist::before { background-color: #ffffff; }
+[data-theme='light'] .sidebar-icon-reports .menu__link--sublist::before { background-color: #fff; }
 
 [data-theme='dark'] .sidebar-icon-home .menu__link--sublist::before,
 [data-theme='dark'] .sidebar-icon-calendar .menu__link--sublist::before,
