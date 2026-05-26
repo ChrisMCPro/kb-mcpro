@@ -44,11 +44,19 @@
     flex: 1;
   }
 
-  .mobile-bottom-nav__icon {
+  [data-theme='dark'] .mobile-bottom-nav__icon {
     width: 24px;
     height: 24px;
     object-fit: contain;
     filter: invert(27%) sepia(85%) saturate(1200%) hue-rotate(330deg) brightness(105%);
+    
+  }
+
+[data-theme='light']    .mobile-bottom-nav__icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7444%) hue-rotate(102deg) brightness(118%) contrast(123%);
     
   }
 

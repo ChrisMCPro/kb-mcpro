@@ -183,17 +183,17 @@
 .sidebar-icon-reports .menu__link--sublist::before {
   content: '';
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   margin-right: 10px;
   vertical-align: middle;
   flex-shrink: 0;
-  mask-size: contain;
-  mask-repeat: no-repeat;
-  mask-position: center;
   -webkit-mask-size: contain;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
 [data-theme='light'] .sidebar-icon-home .menu__link--sublist::before,
@@ -213,7 +213,7 @@
 [data-theme='light'] .sidebar-icon-report-bi .menu__link--sublist::before,
 [data-theme='light'] .sidebar-icon-mobile-app .menu__link--sublist::before,
 [data-theme='light'] .sidebar-icon-nutrition .menu__link--sublist::before,
-[data-theme='light'] .sidebar-icon-reports .menu__link--sublist::before { background-color: #fff; }
+[data-theme='light'] .sidebar-icon-reports .menu__link--sublist::before { background-color: #ffffff; }
 
 [data-theme='dark'] .sidebar-icon-home .menu__link--sublist::before,
 [data-theme='dark'] .sidebar-icon-calendar .menu__link--sublist::before,
@@ -237,24 +237,24 @@
 /* =============================
    SIDEBAR ICONS - Masques SVG
    ============================= */
-.sidebar-icon-home .menu__link--sublist::before { mask-image: url('/img/icons/home.svg'); -webkit-mask-image: url('/img/icons/home.svg'); }
-.sidebar-icon-calendar .menu__link--sublist::before { mask-image: url('/img/icons/calendar.svg'); -webkit-mask-image: url('/img/icons/calendar.svg'); }
-.sidebar-icon-players .menu__link--sublist::before { mask-image: url('/img/icons/players.svg'); -webkit-mask-image: url('/img/icons/players.svg'); }
-.sidebar-icon-sessions .menu__link--sublist::before { mask-image: url('/img/icons/sessions.svg'); -webkit-mask-image: url('/img/icons/sessions.svg'); }
-.sidebar-icon-exercises .menu__link--sublist::before { mask-image: url('/img/icons/exercises.svg'); -webkit-mask-image: url('/img/icons/exercises.svg'); }
-.sidebar-icon-game-football .menu__link--sublist::before { mask-image: url('/img/icons/game-football.svg'); -webkit-mask-image: url('/img/icons/game-football.svg'); }
-.sidebar-icon-insights .menu__link--sublist::before { mask-image: url('/img/icons/insights.svg'); -webkit-mask-image: url('/img/icons/insights.svg'); }
-.sidebar-icon-medical .menu__link--sublist::before { mask-image: url('/img/icons/medical.svg'); -webkit-mask-image: url('/img/icons/medical.svg'); }
-.sidebar-icon-performance .menu__link--sublist::before { mask-image: url('/img/icons/performance.svg'); -webkit-mask-image: url('/img/icons/performance.svg'); }
-.sidebar-icon-mediacenter .menu__link--sublist::before { mask-image: url('/img/icons/mediacenter.svg'); -webkit-mask-image: url('/img/icons/mediacenter.svg'); }
-.sidebar-icon-club .menu__link--sublist::before { mask-image: url('/img/icons/club.svg'); -webkit-mask-image: url('/img/icons/club.svg'); }
-.sidebar-icon-settings .menu__link--sublist::before { mask-image: url('/img/icons/settings.svg'); -webkit-mask-image: url('/img/icons/settings.svg'); }
-.sidebar-icon-scouting .menu__link--sublist::before { mask-image: url('/img/icons/scouting.svg'); -webkit-mask-image: url('/img/icons/scouting.svg'); }
-.sidebar-icon-forms .menu__link--sublist::before { mask-image: url('/img/icons/forms.svg'); -webkit-mask-image: url('/img/icons/forms.svg'); }
-.sidebar-icon-report-bi .menu__link--sublist::before { mask-image: url('/img/icons/report-bi.svg'); -webkit-mask-image: url('/img/icons/report-bi.svg'); }
-.sidebar-icon-reports .menu__link--sublist::before { mask-image: url('/img/icons/reports.svg'); -webkit-mask-image: url('/img/icons/reports.svg'); }
-.sidebar-icon-mobile-app .menu__link--sublist::before { mask-image: url('/img/icons/mobile-app.svg'); -webkit-mask-image: url('/img/icons/mobile-app.svg'); }
-.sidebar-icon-nutrition .menu__link--sublist::before { mask-image: url('/img/icons/nutrition.svg'); -webkit-mask-image: url('/img/icons/nutrition.svg'); }
+.sidebar-icon-home .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/home.svg'); mask-image: url('/img/icons/home.svg'); }
+.sidebar-icon-calendar .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/calendar.svg'); mask-image: url('/img/icons/calendar.svg'); }
+.sidebar-icon-players .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/players.svg'); mask-image: url('/img/icons/players.svg'); }
+.sidebar-icon-sessions .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/sessions.svg'); mask-image: url('/img/icons/sessions.svg'); }
+.sidebar-icon-exercises .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/exercises.svg'); mask-image: url('/img/icons/exercises.svg'); }
+.sidebar-icon-game-football .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/game-football.svg'); mask-image: url('/img/icons/game-football.svg'); }
+.sidebar-icon-insights .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/insights.svg'); mask-image: url('/img/icons/insights.svg'); }
+.sidebar-icon-medical .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/medical.svg'); mask-image: url('/img/icons/medical.svg'); }
+.sidebar-icon-performance .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/performance.svg'); mask-image: url('/img/icons/performance.svg'); }
+.sidebar-icon-mediacenter .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/mediacenter.svg'); mask-image: url('/img/icons/mediacenter.svg'); }
+.sidebar-icon-club .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/club.svg'); mask-image: url('/img/icons/club.svg'); }
+.sidebar-icon-settings .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/settings.svg'); mask-image: url('/img/icons/settings.svg'); }
+.sidebar-icon-scouting .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/scouting.svg'); mask-image: url('/img/icons/scouting.svg'); }
+.sidebar-icon-forms .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/forms.svg'); mask-image: url('/img/icons/forms.svg'); }
+.sidebar-icon-report-bi .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/report-bi.svg'); mask-image: url('/img/icons/report-bi.svg'); }
+.sidebar-icon-reports .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/reports.svg'); mask-image: url('/img/icons/reports.svg'); }
+.sidebar-icon-mobile-app .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/mobile-app.svg'); mask-image: url('/img/icons/mobile-app.svg'); }
+.sidebar-icon-nutrition .menu__link--sublist::before { -webkit-mask-image: url('/img/icons/nutrition.svg'); mask-image: url('/img/icons/nutrition.svg'); }
 
 /* =============================
    NAVBAR LOGO
@@ -332,8 +332,157 @@
 [data-theme='dark'] .navbar__toggle { color: #e63946 !important; }
 [data-theme='dark'] .navbar__toggle svg { fill: #e63946 !important; stroke: #e63946 !important; }
 
+/* Masquer le hamburger — navigation via bottom nav */
+.navbar__toggle {
+  display: none !important;
+}
+
 /* =============================
    NAVBAR ITEMS SPACING
    ============================= */
 .navbar__items--right .navbar__item { margin-left: 10px; }
 
+
+@media (max-width: 996px) {
+
+  .navbar__title {
+    display: none !important;
+  }
+
+  .navbar__inner {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    overflow: visible !important;
+  }
+
+  /* Logo fixe, ne rétrécit pas */
+  .navbar__brand {
+    flex: 0 0 auto !important;
+  }
+
+  /* Groupe droite */
+  .mobileOnly_JoWg {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 2px !important;
+    overflow: visible !important;
+  }
+
+  /* Tous les items visibles */
+  .mobileOnly_JoWg .navbar__item,
+  .mobileOnly_JoWg .dropdown,
+  .mobileOnly_JoWg .toggle_vylO {
+    display: flex !important;
+    align-items: center !important;
+    flex: 0 0 auto !important;
+  }
+
+  /* Taille uniforme pour tous les boutons : 32x32 */
+  .mobileOnly_JoWg .navbar__item,
+  .mobileOnly_JoWg .toggle_vylO button,
+  .mobileOnly_JoWg .navbar-icon-btn {
+    width: 32px !important;
+    height: 32px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* Icônes login et website */
+  .mobileOnly_JoWg .navbar-icon-login,
+  .mobileOnly_JoWg .navbar-icon-website {
+    display: flex !important;
+    width: 32px !important;
+    height: 32px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .mobileOnly_JoWg .navbar-icon-btn img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  /* Searchbar taille fixe, ne cache pas le logo */
+@media (max-width: 996px) {
+  .mobileOnly_JoWg .aa-DetachedSearchButtonPlaceholder,
+  .mobileOnly_JoWg .aa-DetachedSearchButtonQuery {
+    display: none !important;
+  }
+
+   .mobileOnly_JoWg .aa-DetachedSearchButton {
+    flex: 0 0 36px !important;
+    width: 36px !important;
+    height: 32px !important;
+    padding: 0 !important;
+    justify-content: center !important;
+  }
+}
+
+  /* LOCALE : cache le texte complet, affiche seulement les 2 premières lettres */
+  .mobileOnly_JoWg .navbar__link {
+    font-size: 0 !important; /* cache tout */
+    width: 32px !important;
+    height: 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    gap: 0 !important;
+  }
+
+  /* Cache l'icône SVG de la locale, affiche seulement les lettres via ::after */
+  .mobileOnly_JoWg .iconLanguage_nlXk {
+    display: none !important;
+  }
+
+  /* Affiche FR / EN / ES selon la langue active */
+  .mobileOnly_JoWg [lang="fr"] .navbar__link::after,
+  .mobileOnly_JoWg .navbar__link[hreflang="fr"]::after { content: "FR"; }
+  .mobileOnly_JoWg [lang="en"] .navbar__link::after,
+  .mobileOnly_JoWg .navbar__link[hreflang="en"]::after { content: "EN"; }
+  .mobileOnly_JoWg [lang="es"] .navbar__link::after,
+  .mobileOnly_JoWg .navbar__link[hreflang="es"]::after { content: "ES"; }
+
+  /* Fallback si aucun attribut lang : affiche l'icône réduite */
+  .mobileOnly_JoWg .dropdown > .navbar__link::after {
+    content: "🌐";
+    font-size: 14px !important;
+  }
+
+}
+
+/* Desktop : remplace "Français / English / Español" par FR / EN / ES */
+.navbar__link .iconLanguage_nlXk {
+  display: none !important;
+}
+
+.navbar__items--right .dropdown > .navbar__link {
+  font-size: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.navbar__items--right .dropdown > .navbar__link::after {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+[data-navbar-locale="fr"] .navbar__items--right .dropdown > .navbar__link::after,
+html[lang="fr"] .navbar__items--right .dropdown > .navbar__link::after { content: "FR"; }
+
+html[lang="en"] .navbar__items--right .dropdown > .navbar__link::after { content: "EN"; }
+html[lang="es"] .navbar__items--right .dropdown > .navbar__link::after { content: "ES"; }
+
+
+@media (max-width: 996px) {
+  [data-theme="light"] .navbar-icon-btn img {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(12%) saturate(7477%) hue-rotate(222deg) brightness(96%) contrast(96%) !important;
+  }
+}
