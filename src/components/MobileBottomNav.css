@@ -21,7 +21,7 @@
   }
 
   [data-theme='dark'] .mobile-bottom-nav {
-    background-color: #1b1b1d;
+    background-color: #252528;
   }
 
   [data-theme='light'] .mobile-bottom-nav {
@@ -110,7 +110,7 @@
   }
 
   [data-theme='dark'] .mobile-bottom-nav__drawer {
-    background-color: #1b1b1d;
+    background-color: #252528;
   }
 
   .mobile-bottom-nav__drawer-item {

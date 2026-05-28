@@ -60,7 +60,7 @@
     "description": "The label for category 'Calendrier' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Matchs": {
-    "message": "Matches",
+    "message": "Games",
     "description": "The label for category 'Matchs' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Exercises": {
@@ -72,19 +72,19 @@
     "description": "The label for category 'Insights' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Statistiques": {
-    "message": "Statistiques",
+    "message": "Statistics",
     "description": "The label for category 'Statistiques' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Application Mobile": {
-    "message": "Application Mobile",
+    "message": "Mobile app",
     "description": "The label for category 'Application Mobile' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.mobile-joueurs": {
-    "message": "Joueurs",
+    "message": "Players",
     "description": "The label for category 'Joueurs' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.mobile-staff": {
-    "message": "Staff",
+    "message": "Staffs",
     "description": "The label for category 'Staff' in sidebar 'tutorialSidebar'"
   }
 }

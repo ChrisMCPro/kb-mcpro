@@ -9,13 +9,13 @@ const sidebars = {
     {
       type: 'category',
       label: 'Accueil',
-            className: 'sidebar-icon-home',
+      className: 'sidebar-icon-home',
       link: { type: 'generated-index' },
       items: [
-        'accueil/config-widget',
-        'accueil/widget-calendar',
-        'accueil/widget-formtypes',
-        'accueil/widget-shortcut',
+        'home/config-widget',
+        'home/widget-calendar',
+        'home/widget-formtypes',
+        'home/widget-shortcut',
       ],
     },
 

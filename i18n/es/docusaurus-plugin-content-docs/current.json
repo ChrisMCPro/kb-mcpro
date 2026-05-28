@@ -72,15 +72,15 @@
     "description": "The label for category 'Insights' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Statistiques": {
-    "message": "Statistiques",
+    "message": "Estadísticas",
     "description": "The label for category 'Statistiques' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.mobile-joueurs": {
-    "message": "Joueurs",
+    "message": "Jugadores",
     "description": "The label for category 'Joueurs' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.mobile-staff": {
-    "message": "Staff",
+    "message": "Personal",
     "description": "The label for category 'Staff' in sidebar 'tutorialSidebar'"
   }
 }
