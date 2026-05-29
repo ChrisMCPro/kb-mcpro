@@ -55,7 +55,7 @@
 [data-theme='light'] .navbar__search-input {
   background-color: #f5f5f5;
   color: #0d1b2a;
-  border: 1.5px solid #dde1e7;
+  border: 3px solid #232153 !important;
   border-radius: 50px;
   padding: 6px 16px 6px 36px;
   font-size: 0.875rem;
@@ -63,7 +63,7 @@
   width: 180px;
 }
 [data-theme='light'] .navbar__search-input:focus {
-  border-color: #232153;
+  border-color: 2px solid #232153;
   box-shadow: 0 0 0 3px rgba(35, 33, 83, 0.12);
   outline: none;
   width: 220px;
@@ -106,25 +106,25 @@
 .aa-InputWrapper,
 .aa-InputWrapperSuffix { border-radius: 0 !important; }
 
-[data-theme='light'] .aa-DetachedSearchButton { background-color: #f5f5f5 !important; border: 1.5px solid #232153 !important; color: #232153 !important; }
+[data-theme='light'] .aa-DetachedSearchButton { background-color: #fff !important; border: 2px solid #232153 !important; color: #232153 !important; }
 [data-theme='light'] .aa-DetachedSearchButton:hover { border-color: #232153 !important; }
-[data-theme='light'] .aa-DetachedSearchButtonPlaceholder { color: #9a9a9a !important; }
+[data-theme='light'] .aa-DetachedSearchButtonPlaceholder { color: #232153 !important; opacity: 0.7 !important; }
 [data-theme='light'] .aa-DetachedSearchButtonIcon { color: #232153 !important; }
-[data-theme='light'] .aa-Form { background-color: #f5f5f5 !important; border: 1.5px solid #dde1e7 !important; box-shadow: none !important; }
+[data-theme='light'] .aa-Form { background-color: #fff !important; border: 2px solid #232153 !important; box-shadow: none !important; }
 [data-theme='light'] .aa-Form:focus-within { border-color: #232153 !important; box-shadow: 0 0 0 3px rgba(35, 33, 83, 0.12) !important; }
-[data-theme='light'] .aa-Input { background-color: #f5f5f5 !important; color: #0d1b2a !important; border: none !important; }
-[data-theme='light'] .aa-Input::placeholder { color: #9a9a9a !important; opacity: 1 !important; }
+[data-theme='light'] .aa-Input { background-color: #fff !important; color: #0d1b2a !important; border: none !important; }
+[data-theme='light'] .aa-Input::placeholder { color: #232153 !important; opacity: 0.7 !important; }
 [data-theme='light'] .aa-InputWrapperPrefix,
 [data-theme='light'] .aa-InputWrapper,
 [data-theme='light'] .aa-InputWrapperSuffix { background-color: #f5f5f5 !important; }
 [data-theme='light'] .aa-SubmitButton,
-[data-theme='light'] .aa-SubmitIcon { color: #232153 !important; }
+[data-theme='light'] .aa-SubmitIcon { background-color: #fff; color: #232153 !important; }
 [data-theme='light'] .aa-ClearButton { color: #9a9a9a !important; }
 
-[data-theme='dark'] .aa-DetachedSearchButton { background-color: #2a2a2e !important; border: 1.5px solid #e63946 !important; color: #e63946 !important; }
+[data-theme='dark'] .aa-DetachedSearchButton { background-color: #2a2a2e !important; border: 2px solid #e63946 !important; color: #e63946 !important; }
 [data-theme='dark'] .aa-DetachedSearchButtonPlaceholder { color: #e63946 !important; opacity: 0.7 !important; }
 [data-theme='dark'] .aa-DetachedSearchButtonIcon { color: #e63946 !important; }
-[data-theme='dark'] .aa-Form { background-color: #2a2a2e !important; border: 1.5px solid #e63946 !important; box-shadow: none !important; }
+[data-theme='dark'] .aa-Form { background-color: #2a2a2e !important; border: 2px solid #e63946 !important; box-shadow: none !important; }
 [data-theme='dark'] .aa-Form:focus-within { box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.25) !important; }
 [data-theme='dark'] .aa-Input { background-color: #2a2a2e !important; color: #ffffff !important; border: none !important; }
 [data-theme='dark'] .aa-Input::placeholder { color: #e63946 !important; opacity: 0.7 !important; }
@@ -135,7 +135,7 @@
 [data-theme='dark'] .aa-SubmitIcon { color: #e63946 !important; }
 [data-theme='dark'] .aa-ClearButton { color: #e63946 !important; }
 [data-theme='dark'] .aa-DetachedCancelButton { color: #e63946 !important; }
-[data-theme='dark'] .aa-DetachedContainer { background-color: #252528 !important; border: 1px solid #e63946 !important; }
+[data-theme='dark'] .aa-DetachedContainer { background-color: #252528 !important; border:none !important; }
 
 /* =============================
    DARK - Sidebar
