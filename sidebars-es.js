@@ -3,228 +3,245 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   tutorialSidebar: [
-    'intro',
+    "intro",
 
     // 1. Accueil
     {
-      type: 'category',
-      label: 'Accueil',
-      className: 'sidebar-icon-home',
-      link: { type: 'generated-index' },
+      type: "category",
+      label: "Accueil",
+      className: "sidebar-icon-home",
+      link: {
+        type: "generated-index",
+        slug: "/category/home",
+      },
       items: [
-        'home/config-widget',
-        'home/widget-calendar',
-        'home/widget-formtypes',
-        'home/widget-shortcut',
+        "home/config-widget",
+        "home/widget-calendar",
+        "home/widget-formtypes",
+        "home/widget-shortcut",
       ],
     },
 
     // 2. Calendrier
     {
-      type: 'category',
-      label: 'Calendrier',
-            className: 'sidebar-icon-calendar',
+      type: "category",
+      label: "Calendrier",
+      className: "sidebar-icon-calendar",
 
-      link: { type: 'generated-index' },
+      link: {
+        type: "generated-index",
+        slug: "/category/calendar",
+      },
       items: [
-        'calendrier/customise',
-        'calendrier/plan-sessions',
-        'calendrier/plan-pme',
+        "calendrier/customise",
+        "calendrier/plan-sessions",
+        "calendrier/plan-pme",
       ],
     },
 
     // 3. Joueurs — add-official-players retiré (FFF uniquement)
     {
-      type: 'category',
-      label: 'Joueurs',
-            className: 'sidebar-icon-players',
-      link: { type: 'generated-index' },
+      type: "category",
+      label: "Joueurs",
+      className: "sidebar-icon-players",
+      link: {
+        type: "generated-index",
+        slug: "/category/players",
+      },
       items: [
-        'joueurs/create-player',
-        'joueurs/edit-player',
-        'joueurs/send-credentials',
-        'joueurs/change-player-team',
+        "joueurs/create-player",
+        "joueurs/edit-player",
+        "joueurs/send-credentials",
+        "joueurs/change-player-team",
       ],
     },
 
     // 4. Séances
     {
-      type: 'category',
-      label: 'Séances',
-            className: 'sidebar-icon-sessions',
-      link: { type: 'generated-index' },
-      items: [
-        'Séances/import-objective-data',
-        'Séances/plan-sessions',
-      ],
+      type: "category",
+      label: "Séances",
+      className: "sidebar-icon-sessions",
+      link: {
+        type: "generated-index",
+        slug: "/category/sessions",
+      },
+      items: ["Séances/import-objective-data", "Séances/plan-sessions"],
     },
 
     // 5. Exercises
     {
-      type: 'category',
-      label: 'Exercises',
-            className: 'sidebar-icon-exercises',
-      link: { type: 'generated-index' },
-      items: ['exercises/create-exercises'],
+      type: "category",
+      label: "Exercises",
+      className: "sidebar-icon-exercises",
+      link: { type: "generated-index" },
+      items: ["exercises/create-exercises"],
     },
 
     // 6. Matchs
     {
-      type: 'category',
-      label: 'Matchs',
-            className: 'sidebar-icon-game-football',
-      link: { type: 'generated-index' },
-      items: ['matchs/import-objective-data'],
+      type: "category",
+      label: "Matchs",
+      className: "sidebar-icon-game-football",
+      link: {
+        type: "generated-index",
+        slug: "/category/games",
+      },
+      items: ["matchs/import-objective-data"],
     },
 
     // 7. Insights
     {
-      type: 'category',
-      label: 'Insights',
-            className: 'sidebar-icon-insights',
-      link: { type: 'generated-index' },
+      type: "category",
+      label: "Insights",
+      className: "sidebar-icon-insights",
+      link: { type: "generated-index" },
       items: [
         {
-          type: 'category',
-          label: 'Formulaires',
-                    className: 'sidebar-icon-forms',
+          type: "category",
+          label: "Formulaires",
+          className: "sidebar-icon-forms",
           items: [
-            'Insights/Formulaires/create-from-template',
-            'Insights/Formulaires/duplicate-form',
-            'Insights/Formulaires/plan-pme-form',
-            'Insights/Formulaires/event-answers',
-            'Insights/Formulaires/manage-form-translations',
+            "Insights/Formulaires/create-from-template",
+            "Insights/Formulaires/duplicate-form",
+            "Insights/Formulaires/plan-pme-form",
+            "Insights/Formulaires/event-answers",
+            "Insights/Formulaires/manage-form-translations",
           ],
         },
         {
-          type: 'category',
-          label: 'Rapports',
-                    className: 'sidebar-icon-reports',
-          items: ['Insights/Rapports/share-report'],
+          type: "category",
+          label: "Rapports",
+          className: "sidebar-icon-reports",
+          items: ["Insights/Rapports/share-report"],
         },
       ],
     },
 
     // 8. Medical
-            {
-      type: 'category',
-      label: 'Medical',
-      className: 'sidebar-icon-medical',
-      link: { type: 'generated-index' },
+    {
+      type: "category",
+      label: "Medical",
+      className: "sidebar-icon-medical",
+      link: { type: "generated-index" },
       items: [
-        'medical/medical',
-        'medical/medical_web',
-        'medical/medical_mobile',
-        'medical/pathologies',
-        'medical/consultations',
-        'medical/medical-notes',
-        'medical/epidemiologie',
-        'medical/cycle-contraception',       
-        'medical/add-medicine',
-        'medical/prescriptions',
+        "medical/medical",
+        "medical/medical_web",
+        "medical/medical_mobile",
+        "medical/pathologies",
+        "medical/consultations",
+        "medical/medical-notes",
+        "medical/epidemiologie",
+        "medical/cycle-contraception",
+        "medical/add-medicine",
+        "medical/prescriptions",
       ],
     },
 
     // 9. Nutrition
     {
-      type: 'category',
-      label: 'Nutrition',
-      className: 'sidebar-icon-nutrition',
-      link: { type: 'generated-index' },
+      type: "category",
+      label: "Nutrition",
+      className: "sidebar-icon-nutrition",
+      link: { type: "generated-index" },
       items: [
-        'Nutrition/add-value',
-        'Nutrition/organise-table',
-        'Nutrition/sync-nutri-data',
+        "Nutrition/add-value",
+        "Nutrition/organise-table",
+        "Nutrition/sync-nutri-data",
       ],
     },
 
     // 10. Statistiques
     {
-      type: 'category',
-      label: 'Performance',
-            className: 'sidebar-icon-performance',
-      link: { type: 'generated-index' },
+      type: "category",
+      label: "Performance",
+      className: "sidebar-icon-performance",
+      link: { type: "generated-index" },
       items: [
-        'Performance/Suivi athlétique/add-value',
-        'Performance/Suivi athlétique/organise-table',
-        'Performance/Suivi athlétique/sync-athletic-data',
+        "Performance/Suivi athlétique/add-value",
+        "Performance/Suivi athlétique/organise-table",
+        "Performance/Suivi athlétique/sync-athletic-data",
       ],
     },
 
     // 11. Média Center
     {
-      type: 'category',
-      label: 'Media Center',
-            className: 'sidebar-icon-mediacenter',
-      link: { type: 'generated-index' },
-      items: ['Média Center/feed-view-mediacenter'],
+      type: "category",
+      label: "Media Center",
+      className: "sidebar-icon-mediacenter",
+      link: {
+        type: "generated-index",
+        slug: "/category/media",
+      },
+      items: ["Média Center/feed-view-mediacenter"],
     },
 
     // 12. Club
     {
-      type: 'category',
-      label: 'Club',
-      className: 'sidebar-icon-club',
-      link: { type: 'generated-index' },
-      items: [
-        'club/add-user',
-        'club/remove-user',
-      ],
+      type: "category",
+      label: "Club",
+      className: "sidebar-icon-club",
+      link: { type: "generated-index" },
+      items: ["club/add-user", "club/remove-user"],
     },
 
     // 13. Paramètres
     {
-      type: 'category',
-      label: 'Settings',
-      className: 'sidebar-icon-settings',
-      link: { type: 'generated-index' },
-      items: ['Paranètres/season-change'],
+      type: "category",
+      label: "Settings",
+      className: "sidebar-icon-settings",
+      link: {
+        type: "generated-index",
+        slug: "/category/settings",
+      },
+      items: ["Paranètres/season-change"],
     },
 
     // 14. Scouting
     {
-      type: 'category',
-      label: 'Scouting',
-      className: 'sidebar-icon-scouting',
-      link: { type: 'generated-index' },
+      type: "category",
+      label: "Scouting",
+      className: "sidebar-icon-scouting",
+      link: { type: "generated-index" },
       items: [
-        'scouting/mobile/exemple-mobile',
-        'scouting/mobile/index',
-        'scouting/web/exemple-web',
-        'scouting/web/index',
+        "scouting/mobile/exemple-mobile",
+        "scouting/mobile/index",
+        "scouting/web/exemple-web",
+        "scouting/web/index",
       ],
     },
 
     // 15. Application Mobile
     {
-      type: 'category',
-      label: 'Mobile Application',
-      className: 'sidebar-icon-mobile-app',
-      link: { type: 'generated-index' },
+      type: "category",
+      label: "Mobile Application",
+      className: "sidebar-icon-mobile-app",
+      link: {
+        type: "generated-index",
+        slug: "/category/mobile_app",
+      },
       items: [
         {
-          type: 'category',
-          label: 'Players',
-          key: 'mobile/joueurs',
+          type: "category",
+          label: "Players",
+          key: "mobile/joueurs",
           items: [
-            'app-mobile/joueurs/fresh-start',
-            'app-mobile/joueurs/create-player-session',
-            'app-mobile/joueurs/health-data',
-            'app-mobile/joueurs/polar-playerdata',
-
+            "app-mobile/joueurs/fresh-start",
+            "app-mobile/joueurs/create-player-session",
+            "app-mobile/joueurs/health-data",
+            "app-mobile/joueurs/polar-playerdata",
           ],
         },
         {
-          type: 'category',
-          label: 'Staff',
-          key: 'mobile/staff',
+          type: "category",
+          label: "Staff",
+          key: "mobile/staff",
           items: [
-            'app-mobile/staff/create-player-session',
-            'medical/medical_mobile',
+            "app-mobile/staff/create-player-session",
+            "medical/medical_mobile",
           ],
         },
-        'app-mobile/notification-disabled',
-        'app-mobile/resync-token',
+        "app-mobile/notification-disabled",
+        "app-mobile/resync-token",
       ],
     },
   ],
