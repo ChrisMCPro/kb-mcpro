@@ -86,6 +86,7 @@ const sidebars = {
       link: {
         type: "generated-index",
         slug: "/category/games",
+        description: 'Créer, enrichir, et gérer toutes vos données sur vos matchs, synchroniser vos matchs officiels...',
       },
       items: ["matchs/import-objective-data"],
     },
@@ -125,7 +126,6 @@ const sidebars = {
       className: "sidebar-icon-medical",
       link: { type: "generated-index" },
       items: [
-        "medical/medical",
         "medical/medical_web",
         "medical/medical_mobile",
         "medical/pathologies",

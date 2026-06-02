@@ -259,9 +259,21 @@
 /* =============================
    NAVBAR LOGO
    ============================= */
-.navbar__logo img { margin: 0 10px; height: 45px !important; width: auto !important; display: block; }
+.navbar__logo img { margin: 0 10px; height: 45px !important; width: auto !important; display: block;
+
+}
+
+.navbar__logo img {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(7492%) hue-rotate(250deg) brightness(99%) contrast(104%); /* blanc en dark mode */
+}
+
+[data-theme='light'] .navbar__logo img {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(82%) saturate(2826%) hue-rotate(332deg) brightness(89%) contrast(102%); /* couleur originale en light */
+}
 .navbar__logo { display: flex; align-items: center; }
 .navbar__items { align-items: center; }
+
+
 
 /* =============================
    NAVBAR BOUTONS TEXTE
@@ -298,6 +310,7 @@
   padding: 0.5px 11.5px !important;
   font-weight: 500;
 }
+
 
 /* =============================
    NAVBAR ICON BUTTONS
@@ -493,14 +506,22 @@ html[lang="es"] .navbar__items--right .dropdown > .navbar__link::after { content
   color: #fff;
 }
 .navbar__logo img { margin: 10px 5px; height: 75% !important; width: auto !important; display: block; }
-[data-theme='dark'] .navbar__logo svg {
-  fill: #fff;
-  color: #fff;
-}
 }
 
 @media (max-width: 400px) {
 
 .navbar__logo img { margin: 0 0px; height: 60% !important; width: auto !important; display: block;}
 
+}
+
+
+/* TEST FOOTER*/
+
+.footer {
+  background-color: #252528 !important;
+}
+
+[data-theme='light'] .footer{
+  background-color: #232153 !important;
+  color: white !important;
 }

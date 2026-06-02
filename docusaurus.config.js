@@ -102,8 +102,7 @@ const config = {
         title: navbarTitles[locale] ?? navbarTitles.fr,
         logo: {
           alt: 'MyCoach Pro Logo',
-          src: 'img/mcpro-text-red.svg',
-          srcDark: 'img/mcpro-text-white.svg',
+          src: 'img/mcpro-text-white.svg',
           width: 32,
           height: 32,
         },
